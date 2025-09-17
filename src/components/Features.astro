@@ -1,0 +1,42 @@
+---
+import { getLangFromUrl, useTranslation } from "../i18n/utils";
+import "../styles/global.css";
+
+interface Photo {
+  src: string;
+  title: string;
+}
+
+interface Props {
+  images: Photo[];
+}
+
+const { images } = Astro.props;
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslation(lang);
+---
+
+
+<section class="mt-12">
+  <h2 class="text-2xl lg:text-3xl font-bold text-gray-900 mb-8 border-b-2 border-green-500 pb-2 dark:text-white">
+    {t("features")}
+  </h2>
+
+  <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
+    <!-- Lugar 1 -->
+   {
+     images.map((image) => (
+       <div class="relative aspect-square bg-cover bg-center rounded-lg shadow-md group"
+            style={`background-image: url('${image.src}')`}>
+         <div class="absolute inset-0  bg-opacity-60 rounded-lg flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+           <span class="text-white text-sm font-semibold text-center px-2 md:text-lg">
+            {image.title}
+           </span>
+         </div>
+       </div>
+     ))
+   }
+
+
+  </div>
+</section>
