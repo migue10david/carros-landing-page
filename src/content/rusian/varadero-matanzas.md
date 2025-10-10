@@ -6,6 +6,7 @@ images:
   - /images/varadero/213098-Josone-Park.avif
   - /images/varadero/213323-Delfinario.avif
   - /images/varadero/parque-josone-varadero.jpg
+order: 2
 ---
 
 

@@ -6,6 +6,7 @@ images:
   - /images/cienfuegos/cienfuegos-palacio-ferer.jpg
   - /images/Trinidad/212939-Trinidad.jpg
   - /images/Trinidad/Trinidad-plaza-mayor.avif
+order: 4
 ---
 
 <section class="mb-10">

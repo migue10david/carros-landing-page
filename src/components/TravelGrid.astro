@@ -1,39 +1,47 @@
 ---
-import "../styles/global.css"
-import { getLangFromUrl, useTranslation } from "../i18n/utils";;
+import "../styles/global.css";
+import { getLangFromUrl, useTranslation } from "../i18n/utils";
 import TravelCard from "./TravelCard.astro";
 import { getCollection } from "astro:content";
 import type { CollectionEntry } from "astro:content";
 
-
 const lang = getLangFromUrl(Astro.url);
 
 const travels = await getCollection("travels");
+const sortedTravels = travels.sort((a, b) => {
+  const orderA = a.data.order ?? 999;
+  const orderB = b.data.order ?? 999;
+  return orderA - orderB;
+});
 type TravelEntry = CollectionEntry<"travels">;
 const rusian = await getCollection("rusian");
+
+const sortedRussian = rusian.sort((a, b) => {
+  const orderA = a.data.order ?? 999;
+  const orderB = b.data.order ?? 999;
+  return orderA - orderB;
+});
 type RusianEntry = CollectionEntry<"rusian">;
 ---
 
 <div class="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3 py-3">
   {
-    lang === "en" ? (
-      travels.map((travel: TravelEntry) => (
-    <TravelCard
-      title={travel.data.title}
-      description={travel.data.description}
-      images={travel.data.images}
-      slug={travel.slug}
-    />
-  ))
-    ) : (
-      rusian.map((travel: RusianEntry) => (
-    <TravelCard
-      title={travel.data.title}
-      description={travel.data.description}
-      images={travel.data.images}
-      slug={travel.slug}
-    />
-  ))
-    )
+    lang === "en"
+      ? sortedTravels.map((travel: TravelEntry) => (
+          <TravelCard
+            title={travel.data.title}
+            description={travel.data.description}
+            images={travel.data.images}
+            slug={travel.slug}
+          />
+        ))
+      : sortedRussian.map((travel: RusianEntry) => (
+          <TravelCard
+            title={travel.data.title}
+            description={travel.data.description}
+            images={travel.data.images}
+            slug={travel.slug}
+          />
+        ))
   }
 </div>

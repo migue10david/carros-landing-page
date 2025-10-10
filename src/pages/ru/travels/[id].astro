@@ -5,6 +5,7 @@ import Carousel from "../../../components/Carousel.astro";
 import Layout from "../../../layouts/Layout.astro";
 import { havanaPhotos } from "../../../mockedPhotos/havanaPhotos";
 import Features from "../../../components/Features.astro";
+import { HavanaTabs } from "@/components/HavanaTabs";
 
 
 export async function getStaticPaths() {
@@ -36,6 +37,9 @@ const {Content} = await render(travel);
     </p>
 
       <Content />
+      {
+        slug === "havana" ? <HavanaTabs client:load /> : null
+      }
     <Features images={havanaPhotos}/>
   </div>
 </Layout>

@@ -5,6 +5,7 @@ const travels = defineCollection({
         title: z.string(),
         description: z.string(),
         images: z.array(z.string()),
+        order: z.number().optional(),
     }),
 })
 
@@ -13,6 +14,7 @@ const rusian = defineCollection({
         title: z.string(),
         description: z.string(),
         images: z.array(z.string()),
+        order: z.number().optional(),
     }),
 })
 

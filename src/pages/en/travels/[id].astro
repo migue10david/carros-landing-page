@@ -5,7 +5,7 @@ import Carousel from "../../../components/Carousel.astro";
 import Layout from "../../../layouts/Layout.astro";
 import { havanaPhotos } from "../../../mockedPhotos/havanaPhotos";
 import Features from "../../../components/Features.astro";
-
+import { HavanaTabs } from "@/components/HavanaTabs";
 
 export async function getStaticPaths() {
   const travels = await getCollection("travels");
@@ -18,25 +18,30 @@ export async function getStaticPaths() {
 }
 
 const { travel } = Astro.props;
-const { data,slug } = travel;
+const { data, slug } = travel;
 const { title, description, images } = data;
-const {Content} = await render(travel);
+const { Content } = await render(travel);
 ---
 
 <Layout title={title}>
   <div class="mx-auto max-w-7xl px-5 py-12 sm:py-16 lg:px-8">
     <!-- Título -->
-    <h1 class="mb-6 text-center text-3xl font-extrabold text-gray-900 dark:text-white sm:text-4xl">
+    <h1
+      class="mb-6 text-center text-3xl font-extrabold text-gray-900 dark:text-white sm:text-4xl"
+    >
       Excursión a {title}
     </h1>
-      <Carousel  images={images} slug={slug} />
+    <Carousel images={images} slug={slug} />
     <!-- Descripción -->
-    <p class="mb-8  text-justify text-sm md:text-lg  dark:text-gray-300 leading-relaxed">
+    <p
+      class="mb-8 text-justify text-sm md:text-lg dark:text-gray-300 leading-relaxed"
+    >
       {description}
     </p>
 
-      <Content />
-    <Features images={havanaPhotos}/>
+    <Content />
+    {slug === "havana" ? <HavanaTabs client:load/> : null}
+    <Features images={havanaPhotos} />
   </div>
 </Layout>
 ---

@@ -6,6 +6,7 @@ images:
   - /images/havana-tours/Havana-capitolio.jpg
   - /images/havana-tours/floridita.jpg
   - /images/havana-tours/cañonazo.jpg
+order: 1
 ---
 
 <p class="mb-8 text-justify text-sm md:text-lg dark:text-gray-300 leading-relaxed">
