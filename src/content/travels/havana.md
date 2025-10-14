@@ -2,7 +2,7 @@
 title: Havana
 description: Havana, the capital of Cuba, is today one of the most dynamic and attractive tourist destinations in the Caribbean. Crossing the Bacunayagua Bridge — the highest in Cuba and one of the longest — offers breathtaking views of the beautiful Yumuri Valley, adding extra value to the long journey from Varadero. Exclusively touring Old Havana and Modern Havana, learning about their history, enjoying the stunning architecture of their streets and unique local character, is one of the greatest attractions. We offer panoramic tours through the most significant sites of Cuban history, culture, and contemporary life.
 images:
-  - /images/212664-Havana.avif
+  - /images/havana-tours/carro-tatico2.jpeg
   - /images/havana-tours/Havana-capitolio.jpg
   - /images/havana-tours/floridita.jpg
   - /images/havana-tours/cañonazo.jpg
@@ -15,70 +15,96 @@ order: 1
 
 <section class="mb-10">
   <h2 class="text-2xl lg:text-3xl font-bold text-gray-900 mb-6 border-b-2 border-blue-500 pb-2">
-    Classic Itinerary
+    Places to visit:
   </h2>
 
   <ul class="space-y-3 lg:space-y-4">
     <li class="flex items-start space-x-3 text-gray-700 leading-relaxed">
       <span class="inline-block w-2 h-2 bg-blue-500 rounded-full mt-2 flex-shrink-0"></span>
-      <span class="text-sm lg:text-base">Hotel pickup.</span>
+      <span class="text-sm lg:text-base">Bacunayagua Bridge – Cuba’s highest bridge with scenic views of the Yumuri Valley.</span>
     </li>
     <li class="flex items-start space-x-3 text-gray-700 leading-relaxed">
       <span class="inline-block w-2 h-2 bg-blue-500 rounded-full mt-2 flex-shrink-0"></span>
-      <span class="text-sm lg:text-base">Visit the Bacunayagua Viewpoint.</span>
+      <span class="text-sm lg:text-base">Christ Statue in Casablanca – a majestic statue of Christ with panoramic views of the city.</span>
     </li>
     <li class="flex items-start space-x-3 text-gray-700 leading-relaxed">
       <span class="inline-block w-2 h-2 bg-blue-500 rounded-full mt-2 flex-shrink-0"></span>
-      <span class="text-sm lg:text-base">Explore the surroundings of Morro–Cabaña Park.</span>
+      <span class="text-sm lg:text-base">El Morro Fortress – a historic fortress that protected the port of Havana.</span>
     </li>
     <li class="flex items-start space-x-3 text-gray-700 leading-relaxed">
       <span class="inline-block w-2 h-2 bg-blue-500 rounded-full mt-2 flex-shrink-0"></span>
-      <span class="text-sm lg:text-base">Tour through Old Havana and its four main squares: Plaza de Armas, Plaza San Francisco de Asís, Plaza Vieja, and Plaza de la Catedral.</span>
+      <span class="text-sm lg:text-base">A chance to visit Cuba’s official rum and tobacco store and participate in a rum tasting .</span>
     </li>
     <li class="flex items-start space-x-3 text-gray-700 leading-relaxed">
       <span class="inline-block w-2 h-2 bg-blue-500 rounded-full mt-2 flex-shrink-0"></span>
-      <span class="text-sm lg:text-base">Stroll through colonial Havana, declared a UNESCO World Heritage Site in 1982...</span>
-    </li>
-    <li class="flex items-start space-x-3 text-gray-700 leading-relaxed">
-      <span class="inline-block w-2 h-2 bg-amber-500 rounded-full mt-2 flex-shrink-0"></span>
-      <span class="text-sm lg:text-base">
-        <strong class="text-amber-700">Lunch</strong> at a traditional Cuban restaurant
-        <span class="text-amber-600 font-medium ml-1">(average price 20 CUC/person)</span>
-      </span>
+      <span class="text-sm lg:text-base">San Carlos de la Cabaña Fortress – one of the largest fortresses in Cuba with a museum.</span>
     </li>
     <li class="flex items-start space-x-3 text-gray-700 leading-relaxed">
       <span class="inline-block w-2 h-2 bg-blue-500 rounded-full mt-2 flex-shrink-0"></span>
-      <span class="text-sm lg:text-base">Visit the Hotel Ambos Mundos (Ernest Hemingway’s usual residence).</span>
+      <span class="text-sm lg:text-base">Fortress of the Royal Sila- an ancient fortress in Old Havana.</span>
     </li>
     <li class="flex items-start space-x-3 text-gray-700 leading-relaxed">
       <span class="inline-block w-2 h-2 bg-blue-500 rounded-full mt-2 flex-shrink-0"></span>
-      <span class="text-sm lg:text-base">Visit La Bodeguita del Medio; main streets and avenues of Old Havana.</span>
-    </li>
-    <li class="flex items-start space-x-3 text-gray-700 leading-relaxed">
-      <span class="inline-block w-2 h-2 bg-green-500 rounded-full mt-2 flex-shrink-0"></span>
-      <span class="text-sm lg:text-base">
-        <strong class="text-green-700">Panoramic Tour:</strong> The Capitol / Grand Theater of Havana / Havana Harbor — time for photos.
-      </span>
+      <span class="text-sm lg:text-base">Visit souvenir stores in Old Havana</span>
     </li>
     <li class="flex items-start space-x-3 text-gray-700 leading-relaxed">
       <span class="inline-block w-2 h-2 bg-blue-500 rounded-full mt-2 flex-shrink-0"></span>
-      <span class="text-sm lg:text-base">Visit the “Hotel Nacional”</span>
-    </li>
-    <li class="flex items-start space-x-3 text-gray-700 leading-relaxed">
-      <span class="inline-block w-2 h-2 bg-green-500 rounded-full mt-2 flex-shrink-0"></span>
-      <span class="text-sm lg:text-base">
-        <strong class="text-green-700">Visit Revolution Square,</strong> time for photos.
-      </span>
-    </li>
-    <li class="flex items-start space-x-3 text-gray-700 leading-relaxed">
-      <span class="inline-block w-2 h-2 bg-purple-500 rounded-full mt-2 flex-shrink-0"></span>
-      <span class="text-sm lg:text-base">
-        <strong class="text-purple-700">Free time</strong> to explore the Flea Market, the largest in Cuba.
-      </span>
+      <span class="text-sm lg:text-base">The Armory Square is a historic square with colonial buildings. -Templet – the place where, according to legend, the first mass in Havana took place.</span>
     </li>
     <li class="flex items-start space-x-3 text-gray-700 leading-relaxed">
       <span class="inline-block w-2 h-2 bg-blue-500 rounded-full mt-2 flex-shrink-0"></span>
-      <span class="text-sm lg:text-base">Return to hotel.</span>
+      <span class="text-sm lg:text-base">Saint Francisco Square – a square with a historic monastery.</span>
+    </li>
+    <li class="flex items-start space-x-3 text-gray-700 leading-relaxed">
+      <span class="inline-block w-2 h-2 bg-blue-500 rounded-full mt-2 flex-shrink-0"></span>
+      <span class="text-sm lg:text-base">Old Square – one of the most beautiful and oldest squares in Havana.</span>
+    </li>
+    <li class="flex items-start space-x-3 text-gray-700 leading-relaxed">
+      <span class="inline-block w-2 h-2 bg-blue-500 rounded-full mt-2 flex-shrink-0"></span>
+      <span class="text-sm lg:text-base">Cathedral Square – the square by the Cathedral of Havana.</span>
+    </li>
+    <li class="flex items-start space-x-3 text-gray-700 leading-relaxed">
+      <span class="inline-block w-2 h-2 bg-blue-500 rounded-full mt-2 flex-shrink-0"></span>
+      <span class="text-sm lg:text-base">Cathedral of Havana – an important religious monument of the city.</span>
+    </li>
+    <li class="flex items-start space-x-3 text-gray-700 leading-relaxed">
+      <span class="inline-block w-2 h-2 bg-blue-500 rounded-full mt-2 flex-shrink-0"></span>
+      <span class="text-sm lg:text-base">Bodeguita del Medio – a famous bar frequented by Ernest Hemingway.</span>
+    </li>
+        <li class="flex items-start space-x-3 text-gray-700 leading-relaxed">
+      <span class="inline-block w-2 h-2 bg-blue-500 rounded-full mt-2 flex-shrink-0"></span>
+      <span class="text-sm lg:text-base">Hotel Ambos Mundos – Hemingway’s place of residence in Havana.</span>
+    </li>
+        <li class="flex items-start space-x-3 text-gray-700 leading-relaxed">
+      <span class="inline-block w-2 h-2 bg-blue-500 rounded-full mt-2 flex-shrink-0"></span>
+      <span class="text-sm lg:text-base">Revolution Square – a symbol of Cuba’s political history.</span>
+    </li>
+        <li class="flex items-start space-x-3 text-gray-700 leading-relaxed">
+      <span class="inline-block w-2 h-2 bg-blue-500 rounded-full mt-2 flex-shrink-0"></span>
+      <span class="text-sm lg:text-base">Malecon is Havana’s famous waterfront.</span>
+    </li>
+        <li class="flex items-start space-x-3 text-gray-700 leading-relaxed">
+      <span class="inline-block w-2 h-2 bg-blue-500 rounded-full mt-2 flex-shrink-0"></span>
+      <span class="text-sm lg:text-base">The center of Havana – the area where modernity and history mix.</span>
+    </li>
+        <li class="flex items-start space-x-3 text-gray-700 leading-relaxed">
+      <span class="inline-block w-2 h-2 bg-blue-500 rounded-full mt-2 flex-shrink-0"></span>
+      <span class="text-sm lg:text-base">Central Park of the city. </span>
+    </li>
+        </li>
+        <li class="flex items-start space-x-3 text-gray-700 leading-relaxed">
+      <span class="inline-block w-2 h-2 bg-blue-500 rounded-full mt-2 flex-shrink-0"></span>
+      <span class="text-sm lg:text-base">Capitol of Havana – a majestic building, a symbol of power.</span>
+    </li>
+        </li>
+        <li class="flex items-start space-x-3 text-gray-700 leading-relaxed">
+      <span class="inline-block w-2 h-2 bg-blue-500 rounded-full mt-2 flex-shrink-0"></span>
+      <span class="text-sm lg:text-base">Gran Teatro Alicia Alonso – the cultural heart of Havana.</span>
+    </li>
+        </li>
+        <li class="flex items-start space-x-3 text-gray-700 leading-relaxed">
+      <span class="inline-block w-2 h-2 bg-blue-500 rounded-full mt-2 flex-shrink-0"></span>
+      <span class="text-sm lg:text-base">Bar Floridita – the bar where the daiquiri was invented and Hemingway frequented.</span>
     </li>
   </ul>
 </section>

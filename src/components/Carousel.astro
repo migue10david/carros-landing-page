@@ -16,7 +16,6 @@ const { images, slug } = Astro.props;
         images.map((image) => (
           <li class="w-full">
             <img
-              transition:name={`img-${slug}`}
               src={image}
               alt="Vista panorámica de La Habana"
               class="w-full h-64 sm:h-80 md:h-96 lg:h-[500px] object-cover"

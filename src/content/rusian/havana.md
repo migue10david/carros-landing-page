@@ -15,70 +15,96 @@ order: 1
 
 <section class="mb-10">
   <h2 class="text-2xl lg:text-3xl font-bold text-gray-900 mb-6 border-b-2 border-blue-500 pb-2">
-    Классический маршрут
+    Места для посещения:
   </h2>
 
   <ul class="space-y-3 lg:space-y-4">
     <li class="flex items-start space-x-3 text-gray-700 leading-relaxed">
       <span class="inline-block w-2 h-2 bg-blue-500 rounded-full mt-2 flex-shrink-0"></span>
-      <span class="text-sm lg:text-base">Встреча в отеле.</span>
+      <span class="text-sm lg:text-base">Мост Бакунайагуа – самый высокий мост Кубы с живописными видами на долину Юмури.</span>
     </li>
     <li class="flex items-start space-x-3 text-gray-700 leading-relaxed">
       <span class="inline-block w-2 h-2 bg-blue-500 rounded-full mt-2 flex-shrink-0"></span>
-      <span class="text-sm lg:text-base">Посещение смотровой площадки Бакунайагуа.</span>
+      <span class="text-sm lg:text-base">Статуя Христа в Касабланке – величественная статуя Христа с панорамным видом на город.</span>
     </li>
     <li class="flex items-start space-x-3 text-gray-700 leading-relaxed">
       <span class="inline-block w-2 h-2 bg-blue-500 rounded-full mt-2 flex-shrink-0"></span>
-      <span class="text-sm lg:text-base">Осмотр окрестностей парка Морро–Кабанья.</span>
+      <span class="text-sm lg:text-base">Крепость Эль-Морро – историческая крепость, защищавшая порт Гаваны.</span>
     </li>
     <li class="flex items-start space-x-3 text-gray-700 leading-relaxed">
       <span class="inline-block w-2 h-2 bg-blue-500 rounded-full mt-2 flex-shrink-0"></span>
-      <span class="text-sm lg:text-base">Прогулка по Старой Гаване и её четырём главным площадям: Пласа-де-Армас, Пласа-Сан-Франсиско-де-Асис, Пласа-Вьеха и Пласа-де-ла-Катедраль.</span>
+      <span class="text-sm lg:text-base">Возможность посетить официальный магазин рома и табака Кубы и принять участие в дегустации рома.</span>
     </li>
     <li class="flex items-start space-x-3 text-gray-700 leading-relaxed">
       <span class="inline-block w-2 h-2 bg-blue-500 rounded-full mt-2 flex-shrink-0"></span>
-      <span class="text-sm lg:text-base">Прогулка по колониальной Гаване, включённой в список Всемирного наследия ЮНЕСКО в 1982 году...</span>
-    </li>
-    <li class="flex items-start space-x-3 text-gray-700 leading-relaxed">
-      <span class="inline-block w-2 h-2 bg-amber-500 rounded-full mt-2 flex-shrink-0"></span>
-      <span class="text-sm lg:text-base">
-        <strong class="text-amber-700">Обед</strong> в ресторане с традиционной кубинской кухней
-        <span class="text-amber-600 font-medium ml-1">(средняя цена 20 CUC на человека)</span>
-      </span>
+      <span class="text-sm lg:text-base">Крепость Сан-Карлос-де-ла-Кабанья – одна из крупнейших крепостей Кубы с музеем.</span>
     </li>
     <li class="flex items-start space-x-3 text-gray-700 leading-relaxed">
       <span class="inline-block w-2 h-2 bg-blue-500 rounded-full mt-2 flex-shrink-0"></span>
-      <span class="text-sm lg:text-base">Посещение отеля «Амбос Мундос» (любимое место проживания Эрнеста Хемингуэя).</span>
+      <span class="text-sm lg:text-base">Крепость Королевского Сила– старинная крепость в Старой Гаване.</span>
     </li>
     <li class="flex items-start space-x-3 text-gray-700 leading-relaxed">
       <span class="inline-block w-2 h-2 bg-blue-500 rounded-full mt-2 flex-shrink-0"></span>
-      <span class="text-sm lg:text-base">Посещение «Ла Бодегита дель Медио»; главные улицы и проспекты Старой Гаваны.</span>
-    </li>
-    <li class="flex items-start space-x-3 text-gray-700 leading-relaxed">
-      <span class="inline-block w-2 h-2 bg-green-500 rounded-full mt-2 flex-shrink-0"></span>
-      <span class="text-sm lg:text-base">
-        <strong class="text-green-700">Панорамная экскурсия:</strong> Капитолий / Большой театр Гаваны / Гаванский порт — время для фотографий.
-      </span>
+      <span class="text-sm lg:text-base">Посещение сувенирных магазинов в Старой Гаване.</span>
     </li>
     <li class="flex items-start space-x-3 text-gray-700 leading-relaxed">
       <span class="inline-block w-2 h-2 bg-blue-500 rounded-full mt-2 flex-shrink-0"></span>
-      <span class="text-sm lg:text-base">Посещение отеля «Насьональ».</span>
-    </li>
-    <li class="flex items-start space-x-3 text-gray-700 leading-relaxed">
-      <span class="inline-block w-2 h-2 bg-green-500 rounded-full mt-2 flex-shrink-0"></span>
-      <span class="text-sm lg:text-base">
-        <strong class="text-green-700">Посещение площади Революции,</strong> время для фотографий.
-      </span>
-    </li>
-    <li class="flex items-start space-x-3 text-gray-700 leading-relaxed">
-      <span class="inline-block w-2 h-2 bg-purple-500 rounded-full mt-2 flex-shrink-0"></span>
-      <span class="text-sm lg:text-base">
-        <strong class="text-purple-700">Свободное время</strong> для посещения блошиного рынка — крупнейшего на Кубе.
-      </span>
+      <span class="text-sm lg:text-base">Оружейная площадь – историческая площадь с колониальными зданиями. •Темплет – место, где, по легенде, состоялась первая месса в Гаване.</span>
     </li>
     <li class="flex items-start space-x-3 text-gray-700 leading-relaxed">
       <span class="inline-block w-2 h-2 bg-blue-500 rounded-full mt-2 flex-shrink-0"></span>
-      <span class="text-sm lg:text-base">Возвращение в отель.</span>
+      <span class="text-sm lg:text-base">Площадь Святого Франсиско – площадь с историческим монастырем.</span>
+    </li>
+    <li class="flex items-start space-x-3 text-gray-700 leading-relaxed">
+      <span class="inline-block w-2 h-2 bg-blue-500 rounded-full mt-2 flex-shrink-0"></span>
+      <span class="text-sm lg:text-base">Старая площадь – одна из самых красивых и старых площадей Гаваны.</span>
+    </li>
+    <li class="flex items-start space-x-3 text-gray-700 leading-relaxed">
+      <span class="inline-block w-2 h-2 bg-blue-500 rounded-full mt-2 flex-shrink-0"></span>
+      <span class="text-sm lg:text-base">Площадь Кафедра – площадь у Кафедрального собора Гаваны.</span>
+    </li>
+    <li class="flex items-start space-x-3 text-gray-700 leading-relaxed">
+      <span class="inline-block w-2 h-2 bg-blue-500 rounded-full mt-2 flex-shrink-0"></span>
+      <span class="text-sm lg:text-base">Кафедральный собор Гаваны – важный религиозный памятник города.</span>
+    </li>
+    <li class="flex items-start space-x-3 text-gray-700 leading-relaxed">
+      <span class="inline-block w-2 h-2 bg-blue-500 rounded-full mt-2 flex-shrink-0"></span>
+      <span class="text-sm lg:text-base">Бодегита-дель-Медио – знаменитый бар, часто посещаемый Эрнестом Хемингуэем.</span>
+    </li>
+        <li class="flex items-start space-x-3 text-gray-700 leading-relaxed">
+      <span class="inline-block w-2 h-2 bg-blue-500 rounded-full mt-2 flex-shrink-0"></span>
+      <span class="text-sm lg:text-base">Отель Амбос Мундос – место проживания Хемингуэя в Гаване.</span>
+    </li>
+        <li class="flex items-start space-x-3 text-gray-700 leading-relaxed">
+      <span class="inline-block w-2 h-2 bg-blue-500 rounded-full mt-2 flex-shrink-0"></span>
+      <span class="text-sm lg:text-base">Площадь Революции – символ политической истории Кубы.</span>
+    </li>
+        <li class="flex items-start space-x-3 text-gray-700 leading-relaxed">
+      <span class="inline-block w-2 h-2 bg-blue-500 rounded-full mt-2 flex-shrink-0"></span>
+      <span class="text-sm lg:text-base">Малекон – знаменитая набережная Гаваны.</span>
+    </li>
+        <li class="flex items-start space-x-3 text-gray-700 leading-relaxed">
+      <span class="inline-block w-2 h-2 bg-blue-500 rounded-full mt-2 flex-shrink-0"></span>
+      <span class="text-sm lg:text-base">Центр Гаваны – район, где смешиваются современность и история.</span>
+    </li>
+        <li class="flex items-start space-x-3 text-gray-700 leading-relaxed">
+      <span class="inline-block w-2 h-2 bg-blue-500 rounded-full mt-2 flex-shrink-0"></span>
+      <span class="text-sm lg:text-base">Центральный парк города.</span>
+    </li>
+        </li>
+        <li class="flex items-start space-x-3 text-gray-700 leading-relaxed">
+      <span class="inline-block w-2 h-2 bg-blue-500 rounded-full mt-2 flex-shrink-0"></span>
+      <span class="text-sm lg:text-base">Капитолий Гаваны – величественное здание, символ власти.</span>
+    </li>
+        </li>
+        <li class="flex items-start space-x-3 text-gray-700 leading-relaxed">
+      <span class="inline-block w-2 h-2 bg-blue-500 rounded-full mt-2 flex-shrink-0"></span>
+      <span class="text-sm lg:text-base">Гран Театро Алисия Алонсо – культурное сердце Гаваны.</span>
+    </li>
+        </li>
+        <li class="flex items-start space-x-3 text-gray-700 leading-relaxed">
+      <span class="inline-block w-2 h-2 bg-blue-500 rounded-full mt-2 flex-shrink-0"></span>
+      <span class="text-sm lg:text-base">Бар Флоридита – бар, где был изобретен дайкири и часто бывал Хемингуэй.</span>
     </li>
   </ul>
 </section>
