@@ -91,13 +91,23 @@ export function HavanaTabs() {
             </CardHeader>
             <CardContent className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6">
               <img
-                src="/images/havana-tours/cañonazo.jpg"
+                src="/images/havana-tours/sunset.jpg"
                 alt="Havana cañonazo"
                 className="w-full h-64 sm:h-72 object-cover rounded-lg shadow-md hover:shadow-xl transition-shadow"
               />
               <img
-                src="/images/havana-tours/Malecon.jpg"
-                alt="Havana malecón"
+                src="/images/havana-tours/sunset2.jpg"
+                alt="Havana cañonazo"
+                className="w-full h-64 sm:h-72 object-cover rounded-lg shadow-md hover:shadow-xl transition-shadow"
+              />
+               <img
+                src="/images/havana-tours/sunset3.jpg"
+                alt="Havana cañonazo"
+                className="w-full h-64 sm:h-72 object-cover rounded-lg shadow-md hover:shadow-xl transition-shadow"
+              />
+               <img
+                src="/images/havana-tours/sunset4.jpg"
+                alt="Havana cañonazo"
                 className="w-full h-64 sm:h-72 object-cover rounded-lg shadow-md hover:shadow-xl transition-shadow"
               />
             </CardContent>
@@ -143,7 +153,7 @@ export function HavanaTabs() {
                 className="w-full h-64 sm:h-72 object-cover rounded-lg shadow-md hover:shadow-xl transition-shadow"
               />
                <img
-                src="/images/havana-tours/canonazo2.jpg"
+                src="/images/havana-tours/08-1140.jpg"
                 alt="Havana cañonazo"
                 className="w-full h-64 sm:h-72 object-cover rounded-lg shadow-md hover:shadow-xl transition-shadow"
               />

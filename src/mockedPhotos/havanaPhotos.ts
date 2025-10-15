@@ -33,3 +33,30 @@ export const havanaPhotos = [
     },
 
 ]
+
+export const canyonPhotos = [
+    {
+        src: '/images/havana-tours/bosque.jpeg',
+        title: "Havana's Forest"
+    },
+    {
+        src: "/images/havana-tours/bosque2.jpeg",
+        title: "Havana's Forest"
+    },
+    {
+        src: "/images/havana-tours/canonazo1.jpg",
+        title: "Havana's Forest"
+    },
+    {
+        src: "/images/havana-tours/canonazo2.jpg",
+        title: "Cementerio Colón"
+    },
+    {
+        src: "/images/havana-tours/canonazo3.jpg",
+        title: "Cementerio Colón"
+    },
+    {
+        src: "/images/havana-tours/Necropolis-De-Colon.jpg",
+        title: "Necropolis de Colon"
+    }
+]

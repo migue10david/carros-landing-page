@@ -6,6 +6,8 @@ import Layout from "../../../layouts/Layout.astro";
 import { havanaPhotos } from "../../../mockedPhotos/havanaPhotos";
 import Features from "../../../components/Features.astro";
 import { HavanaTabs } from "@/components/HavanaTabs";
+import HavanaCard from "@/components/HavanaCard.astro";
+import { havanaTravelsRussian } from "@/lib/havana";
 
 
 export async function getStaticPaths() {
@@ -40,6 +42,38 @@ const {Content} = await render(travel);
       {
         slug === "havana" ? <HavanaTabs client:load /> : null
       }
+      <div class="flex flex-col gap-3">
+      {
+        slug === "havana" ? (
+          <HavanaCard
+            title={havanaTravelsRussian[0].title}
+            description={havanaTravelsRussian[0].description}
+            images={havanaTravelsRussian[0].images}
+            slug={havanaTravelsRussian[0].slug}
+          />
+        ) : null
+      }
+      {
+        slug === "havana" ? (
+          <HavanaCard
+            title={havanaTravelsRussian[1].title}
+            description={havanaTravelsRussian[1].description}
+            images={havanaTravelsRussian[1].images}
+            slug={havanaTravelsRussian[1].slug}
+          />
+        ) : null
+      }
+      {
+        slug === "havana" ? (
+          <HavanaCard
+            title={havanaTravelsRussian[2].title}
+            description={havanaTravelsRussian[2].description}
+            images={havanaTravelsRussian[2].images}
+            slug={havanaTravelsRussian[2].slug}
+          />
+        ) : null
+      }
+    </div>
     <Features images={havanaPhotos}/>
   </div>
 </Layout>

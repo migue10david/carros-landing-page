@@ -3,40 +3,64 @@ import Carousel from "@/components/Carousel.astro";
 import Layout from "@/layouts/Layout.astro";
 import { havanaTravels } from "@/lib/havana";
 import { getLangFromUrl, useTranslation } from "@/i18n/utils";
+import Features from "@/components/Features.astro";
+import { canyonPhotos } from "@/mockedPhotos/havanaPhotos";
 
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslation(lang);
-
 ---
-<Layout title="Hemingway">
-    <div class="mx-auto max-w-7xl px-5 py-12 sm:py-16 lg:px-8">
+
+<Layout title="Cañonazo">
+  <div class="mx-auto max-w-7xl px-5 py-12 sm:py-16 lg:px-8">
     <!-- Título -->
     <div class="flex flex-col items-start pb-4">
- <a 
-  href={`/${lang}/travels/havana`} 
-  class="group inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 text-gray-700 dark:text-gray-300 font-medium  hover:shadow-md transition-all duration-300 hover:-translate-x-1"
->
-  <svg 
-    class="w-4 h-4 transition-transform duration-300 group-hover:-translate-x-1" 
-    fill="none" 
-    stroke="currentColor" 
-    viewBox="0 0 24 24" 
-    xmlns="http://www.w3.org/2000/svg"
-  >
-    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path>
-  </svg>
-  Return
-</a>
-  <h1 class="mt-2 text-start text-2xl font-semibold tracking-tight text-gray-900 dark:text-white sm:text-3xl md:text-4xl leading-tight">
-    Excursions to {havanaTravels[2].title}
-  </h1>
-</div>
+      <a
+        href={`/${lang}/travels/havana`}
+        class="group inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 text-gray-700 dark:text-gray-300 font-medium hover:shadow-md transition-all duration-300 hover:-translate-x-1"
+      >
+        <svg
+          class="w-4 h-4 transition-transform duration-300 group-hover:-translate-x-1"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M10 19l-7-7m0 0l7-7m-7 7h18"></path>
+        </svg>
+        Return
+      </a>
+      <h1
+        class="mt-2 text-start text-2xl font-semibold tracking-tight text-gray-900 dark:text-white sm:text-3xl md:text-4xl leading-tight"
+      >
+        Excursions to {havanaTravels[2].title}
+      </h1>
+    </div>
     <Carousel images={havanaTravels[2].images} slug={havanaTravels[2].slug} />
     <!-- Descripción -->
     <p
-      class="mb-8 text-justify text-sm md:text-lg dark:text-gray-300 leading-relaxed"
+      class=" text-justify text-sm md:text-lg dark:text-gray-300 leading-relaxed"
     >
       {havanaTravels[2].description}
+      <br>
+      Experience the legendary “Cañonazo” Ceremony, a spectacular evening tradition
+      held nightly at La Cabaña Fortress. Watch as soldiers in historic uniforms
+      march through the fort starting at 8 p.m., culminating at 9 p.m. with a powerful
+      cannon shot that lights up the Havana sky — a custom that dates back to colonial
+      times. 
+      <br>
+      You&#39;ll also explore iconic landmarks such as the majestic Colón Cemetery,
+      the lush Havana Forest, and many other fascinating sites — all tailored to
+      your interests.
+      <br>
+      Immerse yourself in Havana&#39;s living history and feel the heartbeat
+      of a city like no other!
     </p>
   </div>
+    <div class="px-4">
+        <Features images={canyonPhotos} />
+    </div>
 </Layout>

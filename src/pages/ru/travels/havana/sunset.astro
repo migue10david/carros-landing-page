@@ -1,7 +1,7 @@
 ---
 import Carousel from "@/components/Carousel.astro";
 import Layout from "@/layouts/Layout.astro";
-import { havanaTravels } from "@/lib/havana";
+import { havanaTravelsRussian } from "@/lib/havana";
 import { getLangFromUrl, useTranslation } from "@/i18n/utils";
 
 const lang = getLangFromUrl(Astro.url);
@@ -28,15 +28,15 @@ const t = useTranslation(lang);
   Return
 </a>
   <h1 class="mt-2 text-start text-2xl font-semibold tracking-tight text-gray-900 dark:text-white sm:text-3xl md:text-4xl leading-tight">
-    Excursions to {havanaTravels[1].title}
+    Excursions to {havanaTravelsRussian[1].title}
   </h1>
 </div>
-    <Carousel images={havanaTravels[1].images} slug={havanaTravels[1].slug} />
+    <Carousel images={havanaTravelsRussian[1].images} slug={havanaTravelsRussian[1].slug} />
     <!-- Descripción -->
     <p
       class="mb-8 text-justify text-sm md:text-lg dark:text-gray-300 leading-relaxed"
     >
-      {havanaTravels[1].description}
+      {havanaTravelsRussian[1].description}
     </p>
   </div>
 </Layout>
