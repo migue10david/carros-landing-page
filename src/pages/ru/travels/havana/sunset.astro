@@ -3,6 +3,8 @@ import Carousel from "@/components/Carousel.astro";
 import Layout from "@/layouts/Layout.astro";
 import { havanaTravelsRussian } from "@/lib/havana";
 import { getLangFromUrl, useTranslation } from "@/i18n/utils";
+import { sunsetPhotos } from "@/mockedPhotos/havanaPhotos";
+import Features from "@/components/Features.astro";
 
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslation(lang);
@@ -34,9 +36,13 @@ const t = useTranslation(lang);
     <Carousel images={havanaTravelsRussian[1].images} slug={havanaTravelsRussian[1].slug} />
     <!-- Descripción -->
     <p
-      class="mb-8 text-justify text-sm md:text-lg dark:text-gray-300 leading-relaxed"
+      class=" text-justify text-sm md:text-lg dark:text-gray-300 leading-relaxed"
     >
       {havanaTravelsRussian[1].description}
     </p>
+     <div>
+    <Features images={sunsetPhotos} />
   </div>
+  </div>
+  
 </Layout>

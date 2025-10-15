@@ -8,6 +8,7 @@ import Features from "../../../components/Features.astro";
 import { HavanaTabs } from "@/components/HavanaTabs";
 import HavanaCard from "@/components/HavanaCard.astro";
 import { havanaTravelsRussian } from "@/lib/havana";
+import { HavanaRussianTabs } from "@/components/HavanaRussianTabs";
 
 
 export async function getStaticPaths() {
@@ -30,7 +31,7 @@ const {Content} = await render(travel);
   <div class="mx-auto max-w-7xl px-5 py-12 sm:py-16 lg:px-8">
     <!-- Título -->
     <h1 class="mb-6 text-center text-3xl font-extrabold text-gray-900 dark:text-white sm:text-4xl">
-      Экскурсии в {title}
+      Экскурсии в {title === "Гавана" ? "Гавану" : title}
     </h1>
       <Carousel  images={images} slug={slug} />
     <!-- Descripción -->
@@ -39,8 +40,9 @@ const {Content} = await render(travel);
     </p>
 
       <Content />
+      {slug === "havana" ? <h1 class="pb-3 text-center  font-extrabold text-gray-900 dark:text-white text-2xl">Другие экскурсии в Гавану</h1> : null}
       {
-        slug === "havana" ? <HavanaTabs client:load /> : null
+        slug === "havana" ? <HavanaRussianTabs client:load /> : null
       }
       <div class="flex flex-col gap-3">
       {

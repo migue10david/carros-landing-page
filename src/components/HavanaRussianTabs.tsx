@@ -8,7 +8,7 @@ import {
 } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 
-export function HavanaTabs() {
+export function HavanaRussianTabs() {
   return (
     <div className="w-full max-w-7xl mx-auto flex-col gap-6 px-4 py-8 hidden md:block">
       <Tabs defaultValue="hemingway" className="w-full">
@@ -37,14 +37,15 @@ export function HavanaTabs() {
           <Card className="border-2 shadow-lg">
             <CardHeader className="space-y-3">
               <CardTitle className="text-2xl sm:text-3xl font-bold text-balance">
-                Colonial Havana + Hemingway House-Museum
+                Колониальная Гавана + Дом-Музей Хемингуэя
               </CardTitle>
               <CardDescription className="text-base sm:text-lg leading-relaxed text-pretty">
-                You will be able to visit all the sites offered on the Colonial
-                Havana tour and also enjoy a guided tour to Finca Vihia,
-                Hemingway&#39;s famous house on the outskirts of the city. This
-                place rich in history, where you can learn how the writer lived
-                and see for yourself the places that inspired his great works.
+                Вы сможете посетить все места, предлагаемые в экскурсии
+                “Колониальная Гавана”, а также насладиться экскурсией в Финка
+                Вихия, знаменитый дом Хемингуэя на окраине города. Это место с
+                богатой историей, где вы сможете узнать, как жил писатель, и
+                увидеть своими глазами места, вдохновлявшие его на создание
+                великих произведений
               </CardDescription>
             </CardHeader>
             <CardContent className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6">
@@ -77,16 +78,15 @@ export function HavanaTabs() {
           <Card className="border-2 shadow-lg">
             <CardHeader className="space-y-3">
               <CardTitle className="text-2xl sm:text-3xl font-bold text-balance">
-                Havana + Sunset
+                Гавана+ закат
               </CardTitle>
               <CardDescription className="text-base sm:text-lg leading-relaxed text-pretty">
-                You will be able to visit all the places included in the
-                “Colonial Havana” tour and enjoy a walk through the most
-                picturesque corners of the city. In addition, if you wish, you
-                can delay your departure from Havana a bit to enjoy the
-                beautiful Havana sunset — a moment when the city is bathed in
-                golden tones and filled with a unique atmosphere of warmth and
-                romance.
+                Вы сможете посетить все места, предлагаемые в экскурсии
+                “Колониальная Гавана”, а также насладиться прогулкой по самым
+                живописным уголкам города. Кроме того, вы можете отложить выезд
+                из Гаваны, чтобы насладиться прекрасным гаванским закатом —
+                моментом, когда город окрашивается в золотые тона и наполняется
+                неповторимой атмосферой тепла и романтики.
               </CardDescription>
             </CardHeader>
             <CardContent className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6">
@@ -100,12 +100,12 @@ export function HavanaTabs() {
                 alt="Havana cañonazo"
                 className="w-full h-64 sm:h-72 object-cover rounded-lg shadow-md hover:shadow-xl transition-shadow"
               />
-               <img
+              <img
                 src="/images/havana-tours/sunset3.jpg"
                 alt="Havana cañonazo"
                 className="w-full h-64 sm:h-72 object-cover rounded-lg shadow-md hover:shadow-xl transition-shadow"
               />
-               <img
+              <img
                 src="/images/havana-tours/sunset4.jpg"
                 alt="Havana cañonazo"
                 className="w-full h-64 sm:h-72 object-cover rounded-lg shadow-md hover:shadow-xl transition-shadow"
@@ -122,24 +122,23 @@ export function HavanaTabs() {
                 Cañonazo
               </CardTitle>
               <CardDescription className="text-base sm:text-lg leading-relaxed text-pretty">
-                Will be able to visit all the places included in the “Colonial
-                Havana” tour and enjoy a walk through the most picturesque
-                corners of the city.
+                Вы сможете посетить все места, предлагаемые в экскурсии
+                “Колониальная Гавана”, а также насладиться прогулкой по самым
+                живописным уголкам города.
                 <br />
-                 Experience the legendary “Cañonazo”
-                Ceremony, a spectacular evening tradition held nightly at La
-                Cabaña Fortress. Watch as soldiers in historic uniforms march
-                through the fort starting at 8 p.m., culminating at 9 p.m. with
-                a powerful cannon shot that lights up the Havana sky — a custom
-                that dates back to colonial times. 
+                Станьте свидетелем знаменитой церемонии «Каньонасо» — яркого
+                вечернего шоу, которое проходит ежедневно на крепости Ла
+                Кабанья. В 8 вечера начинается красочный парад солдат в
+                исторической форме, а ровно в 9 небо над Гаваной озаряется
+                мощным выстрелом пушки! Эта традиция уходит корнями в
+                колониальные времена и сегодня стала настоящим символом города.
                 <br />
-                You&#39;ll also explore
-                iconic landmarks such as the majestic Colón Cemetery, the lush
-                Havana Forest, and many other fascinating sites — all tailored
-                to your interests.
+                Кроме того, вы посетите легендарное кладбище Колона,
+                таинственный Гаванский лес и многие другие удивительные места —
+                всё по вашему выбору!
                 <br />
-                 Immerse yourself in Havana&#39;s living
-                history and feel the heartbeat of a city like no other!
+                Откройте очарование Гаваны — города, где история оживает на
+                каждом шагу!
               </CardDescription>
             </CardHeader>
             <CardContent className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6">
@@ -158,7 +157,7 @@ export function HavanaTabs() {
                 alt="Havana cañonazo"
                 className="w-full h-64 sm:h-72 object-cover rounded-lg shadow-md hover:shadow-xl transition-shadow"
               />
-               <img
+              <img
                 src="/images/havana-tours/08-1140.jpg"
                 alt="Havana cañonazo"
                 className="w-full h-64 sm:h-72 object-cover rounded-lg shadow-md hover:shadow-xl transition-shadow"

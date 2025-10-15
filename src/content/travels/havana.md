@@ -5,7 +5,7 @@ images:
   - /images/havana-tours/carro-tatico2.jpeg
   - /images/havana-tours/Havana-capitolio.jpg
   - /images/havana-tours/floridita.jpg
-  - /images/havana-tours/cañonazo.jpg
+  - /images/havana-tours/plaza2.jpg
 order: 1
 ---
 
@@ -49,7 +49,11 @@ order: 1
     </li>
     <li class="flex items-start space-x-3 text-gray-700 leading-relaxed">
       <span class="inline-block w-2 h-2 bg-blue-500 rounded-full mt-2 flex-shrink-0"></span>
-      <span class="text-sm lg:text-base">The Armory Square is a historic square with colonial buildings. -Templet – the place where, according to legend, the first mass in Havana took place.</span>
+      <span class="text-sm lg:text-base">The Armory Square is a historic square with colonial buildings.</span>
+    </li>
+     <li class="flex items-start space-x-3 text-gray-700 leading-relaxed">
+      <span class="inline-block w-2 h-2 bg-blue-500 rounded-full mt-2 flex-shrink-0"></span>
+      <span class="text-sm lg:text-base">Templet – the place where, according to legend, the first mass in Havana took place.</span>
     </li>
     <li class="flex items-start space-x-3 text-gray-700 leading-relaxed">
       <span class="inline-block w-2 h-2 bg-blue-500 rounded-full mt-2 flex-shrink-0"></span>

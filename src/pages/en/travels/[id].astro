@@ -31,7 +31,7 @@ const { Content } = await render(travel);
     <h1
       class="mb-6 text-center text-3xl font-extrabold text-gray-900 dark:text-white sm:text-4xl"
     >
-      Excursions to {title}
+      Excursions to {title === "Havana" ? "Colonial Havana" : title}
     </h1>
     <Carousel images={images} slug={slug} />
     <!-- Descripción -->
@@ -42,6 +42,7 @@ const { Content } = await render(travel);
     </p>
 
     <Content />
+    {slug === "havana" ? <h1 class="pb-3 text-center  font-extrabold text-gray-900 dark:text-white text-2xl">Other excursions to Havana</h1> : null}
     {slug === "havana" ? <HavanaTabs client:load /> : null}
     <div class="flex flex-col gap-3">
       {

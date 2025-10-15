@@ -9,23 +9,23 @@ export const havanaPhotos = [
     },
     {
         src: '/images/havana-tours/floridita.jpg',
-        title: 'Florida',
+        title: 'Bar Floridita',
     },
     {
-        src: '/images/havana-tours/cañonazo.jpg',
-        title: 'Cañonazo',
+        src: '/images/havana-tours/Cristo-De-La-Habana.jpg',
+        title: 'Christ Statue',
     },
     {
-        src: '/images/havana-tours/castillo-de-la-real-fuerza.jpg',
-        title: 'Castillo de la Real Fuerza',
+        src: '/images/havana-tours/Plaza-de-la-revolucion.jpg',
+        title: 'Plaza de la Revolución',
     },
     {
-        src: '/images/havana-tours/puente-bacunayagua.jpg',
-        title: 'Puente Bacunayagua',
+        src: '/images/havana-tours/ambos-mundos.jpg',
+        title: 'Hotel Ambos Mundos',
     },
     {
         src: '/images/havana-tours/plaza-de-armas.jpg',
-        title: 'Plaza de Armas',
+        title: 'The Armory Square',
     },
     {
         src: '/images/havana-tours/Malecon.jpg',
@@ -58,5 +58,43 @@ export const canyonPhotos = [
     {
         src: "/images/havana-tours/Necropolis-De-Colon.jpg",
         title: "Necropolis de Colon"
+    }
+]
+
+export const hemingwayPhotos = [
+    {
+        src: "/images/havana-tours/bacunayagua.jpg",
+        title: "Puente de Bacunayagua"
+    },
+    {
+        src: "/images/havana-tours/cristo.jpg",
+        title: "Cristo de La Habana"
+    },
+    {
+        src: "/images/havana-tours/capitolio.jpg",
+        title: "Capitolio"
+    },
+    {
+        src: "/images/havana-tours/plaza.jpg",
+        title: "Plaza de la Revolución"
+    }
+]
+
+export const sunsetPhotos = [
+    {
+        src: "/images/havana-tours/cristo2.jpg",
+        title: "Cristo de La Habana"
+    },
+    {
+        src: "/images/havana-tours/plaza2.jpg",
+        title: "Plaza de la Revolución"
+    },
+    {
+        src: "/images/havana-tours/plaza-vieja.jpg",
+        title: "Plaza Vieja"
+    },
+    {
+        src: "/images/havana-tours/hotel-nacional.jpg",
+        title: "Hotel Nacional"
     }
 ]
