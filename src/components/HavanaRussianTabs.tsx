@@ -17,19 +17,19 @@ export function HavanaRussianTabs() {
             value="hemingway"
             className="text-sm sm:text-base whitespace-normal h-auto py-3"
           >
-            Colonial Havana + Hemingway House-Museum
+            Колониальная Гавана + Дом-Музей Хемингуэя
           </TabsTrigger>
           <TabsTrigger
             value="sunset"
             className="text-sm sm:text-base whitespace-normal h-auto py-3"
           >
-            Havana + Sunset
+            Гавана + закат
           </TabsTrigger>
           <TabsTrigger
             value="cañonazo"
             className="text-sm sm:text-base whitespace-normal h-auto py-3"
           >
-            Cañonazo
+            Гавана + Церемония «Каньонасо»
           </TabsTrigger>
         </TabsList>
 
