@@ -1,11 +1,11 @@
 ---
-title: Cienaga de Zapata
-description: Cienaga de Zapata is the largest and best preserved  wet land  in  Cuba  and one of the  largest in Latin  America and  the Caribbean, declared a Biosphere Reserve  in 2000. This amazing  tour includes a visit to  a crocodile farm with different species, snorkeling in the Cave of the fishes, sailing through the narrow channels of the Laguna del Tesoro, and the visit to the Aldea Taina «Guamá». Probably the greatest treasure that you will find is the blinding nature that surrounds the place. Do not miss this chance of being in tune with the nature.
+title: The Caribbean Coast
+description: The Zapata Swamp is the largest and best preserved swamp in Cuba and one of the most important in the Caribbean, declared a biosphere reserve by UNESCO. This unique area offers amazing fauna, home to the Cuban crocodile, endemic birds and landscapes that combine mangroves, lagoons and tropical jungles. Nearby are charming places such as Playa Larga and Cueva de los peces, ideal for enjoying the charm of the Caribbean coast. We are prepared to accommodate your interests, so the itinerary is customized on the day of the trip to suit the needs of each client
 images:
-  - /images/cienaga-de-zapata/guama-playa-larga-tour-157.jpeg
-  - /images/cienaga-de-zapata/guama.jpeg
-  - /images/cienaga-de-zapata/la-cueva-de-los-peces.jpg
-  - /images/cienaga-de-zapata/w636h480x0y2-edce65f3.avif
+  - /images/cienaga-de-zapata/caribe2.jpeg
+  - /images/cienaga-de-zapata/caribe4.jpeg
+  - /images/cienaga-de-zapata/caribe7.jpeg
+  - /images/cienaga-de-zapata/caribe6.jpeg
 order: 3
 ---
 
@@ -17,48 +17,41 @@ order: 3
 
 <section class="mb-10">
   <h2 class="text-2xl lg:text-3xl font-bold text-gray-900 mb-6 border-b-2 border-blue-500 pb-2">
-    Classic Itinerary
+    Places to visit
   </h2>
 
   <ul class="space-y-3 lg:space-y-4">
     <li class="flex items-start space-x-3 text-gray-700 leading-relaxed">
       <span class="inline-block w-2 h-2 bg-blue-500 rounded-full mt-2 flex-shrink-0"></span>
-      <span class="text-sm lg:text-base">Hotel pickup.</span>
+      <span class="text-sm lg:text-base">Mini farm – here you will see typical Cuban animals and plants, such as bananas and sugar cane, and see how fresh cane juice is made.</span>
     </li>
     <li class="flex items-start space-x-3 text-gray-700 leading-relaxed">
       <span class="inline-block w-2 h-2 bg-blue-500 rounded-full mt-2 flex-shrink-0"></span>
-      <span class="text-sm lg:text-base">Visit Guamá Tourist Park, located in the Zapata Swamp — a 10,499-square-kilometer natural reserve in southern Matanzas province.</span>
+      <span class="text-sm lg:text-base">The Crocodile Farm is a place to see different species of crocodiles and learn about their breeding and conservation.</span>
     </li>
     <li class="flex items-start space-x-3 text-gray-700 leading-relaxed">
       <span class="inline-block w-2 h-2 bg-blue-500 rounded-full mt-2 flex-shrink-0"></span>
-      <span class="text-sm lg:text-base">Explore “Fiesta Campesina” farm — meet domestic and wild animals, and learn about traditional Cuban agricultural practices.</span>
+      <span class="text-sm lg:text-base">The Bay of Pigs is a historical place associated with interesting pages of Cuba’s past.</span>
     </li>
     <li class="flex items-start space-x-3 text-gray-700 leading-relaxed">
       <span class="inline-block w-2 h-2 bg-blue-500 rounded-full mt-2 flex-shrink-0"></span>
-      <span class="text-sm lg:text-base">Visit the Guamá crocodile farm.</span>
+      <span class="text-sm lg:text-base">Cave of the fishes is an incredible natural cenote where you can swim in crystal clear waters and see exotic fish.</span>
     </li>
     <li class="flex items-start space-x-3 text-gray-700 leading-relaxed">
       <span class="inline-block w-2 h-2 bg-blue-500 rounded-full mt-2 flex-shrink-0"></span>
-      <span class="text-sm lg:text-base">Snorkeling and swimming in the “Cueva de los Peces” (Cave of the Fish), a stunning Caribbean sea cave — excellent for birdwatching too.</span>
-    </li>
-    <li class="flex items-start space-x-3 text-gray-700 leading-relaxed">
-      <span class="inline-block w-2 h-2 bg-amber-500 rounded-full mt-2 flex-shrink-0"></span>
-      <span class="text-sm lg:text-base">
-        <strong class="text-amber-700">Lunch</strong> at a traditional Cuban restaurant
-        <span class="text-amber-600 font-medium ml-1">(approx. $15 USD per person)</span>
-      </span>
+      <span class="text-sm lg:text-base">There you can dive, snorkel, observe corals and fish and feed them directly in the water.</span>
     </li>
     <li class="flex items-start space-x-3 text-gray-700 leading-relaxed">
       <span class="inline-block w-2 h-2 bg-blue-500 rounded-full mt-2 flex-shrink-0"></span>
-      <span class="text-sm lg:text-base">Visit a local home where hummingbirds — the world’s tiniest birds — are fed. Observe them up close in their natural habitat.</span>
+      <span class="text-sm lg:text-base">Lunch at a local restaurant – optional exotic Cuban specialties: turtle, crocodile, fish, deer, hutia, pork, crab, lobster or beef.</span>
     </li>
     <li class="flex items-start space-x-3 text-gray-700 leading-relaxed">
       <span class="inline-block w-2 h-2 bg-blue-500 rounded-full mt-2 flex-shrink-0"></span>
-      <span class="text-sm lg:text-base">Boat ride through the channels of La Laguna del Tesoro — a pristine 9-square-kilometer natural lake, 4 meters deep, surrounded by untouched vegetation and home to abundant trout.</span>
+      <span class="text-sm lg:text-base">The Colibri House is a magical place where you can see the world’s smallest bird, the colibri, as well as other Cuban birds, such as the zunzun, in their natural environment.</span>
     </li>
     <li class="flex items-start space-x-3 text-gray-700 leading-relaxed">
       <span class="inline-block w-2 h-2 bg-blue-500 rounded-full mt-2 flex-shrink-0"></span>
-      <span class="text-sm lg:text-base">Return to your hotel.</span>
+      <span class="text-sm lg:text-base">On the way back, you will have the opportunity to stop at a local fruit market and taste Cuba’s fresh tropical fruits.</span>
     </li>
   </ul>
 </section>

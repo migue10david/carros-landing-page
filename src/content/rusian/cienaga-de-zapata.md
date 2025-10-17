@@ -1,11 +1,11 @@
 ---
-title: Болото Сапата
-description: Сьенага-де-Сапата — крупнейшая и наиболее хорошо сохранившаяся водно-болотная зона Кубы и одна из крупнейших в Латинской Америке и Карибском бассейне, объявленная биосферным заповедником в 2000 году. Этот удивительный тур включает посещение крокодиловой фермы с различными видами крокодилов, сноркелинг в пещере Рыб, прогулку на лодке по узким каналам Лагуна-дель-Тесоро и посещение заповедника Альдеа-Таина «Гуама». Пожалуй, самое большое сокровище, которое вы здесь найдете, — это ослепительная природа, окружающая это место. Не упустите возможность ощутить единение с природой.
+title: Карибское побережье
+description: Болото Сапата – самое большое и хорошо сохранившееся болото на Кубе и одно из самых важных в Карибском бассейне, объявленное ЮНЕСКО биосферным заповедником. В этом уникальном районе вы сможете полюбоваться ослепительной природой, где обитает кубинский крокодил, эндемичные птицы и ландшафты, сочетающие мангровые заросли, лагуны и тропические леса. Поблизости находятся такие очаровательные места, как Плайя-Ларга, и Пещера Рыб , идеальные для того, чтобы насладиться очарованием Карибского побережья. Мы готовы удовлетворить самые разные интересы, поэтому маршрут составляется индивидуально в день тура с учетом потребностей каждого клиента.
 images:
-  - /images/cienaga-de-zapata/guama-playa-larga-tour-157.jpeg
-  - /images/cienaga-de-zapata/guama.jpeg
-  - /images/cienaga-de-zapata/la-cueva-de-los-peces.jpg
-  - /images/cienaga-de-zapata/w636h480x0y2-edce65f3.avif
+  - /images/cienaga-de-zapata/caribe2.jpeg
+  - /images/cienaga-de-zapata/caribe4.jpeg
+  - /images/cienaga-de-zapata/caribe7.jpeg
+  - /images/cienaga-de-zapata/caribe6.jpeg
 order: 3
 ---
 
@@ -15,48 +15,41 @@ order: 3
 
 <section class="mb-10">
   <h2 class="text-2xl lg:text-3xl font-bold text-gray-900 mb-6 border-b-2 border-blue-500 pb-2">
-    Классический маршрут
+    Места для посещения:
   </h2>
 
   <ul class="space-y-3 lg:space-y-4">
     <li class="flex items-start space-x-3 text-gray-700 leading-relaxed">
       <span class="inline-block w-2 h-2 bg-blue-500 rounded-full mt-2 flex-shrink-0"></span>
-      <span class="text-sm lg:text-base">Встреча в отеле.</span>
+      <span class="text-sm lg:text-base">Мини-ферма – здесь вы увидите типичных кубинских животных и растения, такие как банан и сахарный тростник, а также сможете наблюдать, как изготавливают свежий сок из тростника.</span>
     </li>
     <li class="flex items-start space-x-3 text-gray-700 leading-relaxed">
       <span class="inline-block w-2 h-2 bg-blue-500 rounded-full mt-2 flex-shrink-0"></span>
-      <span class="text-sm lg:text-base">Посещение туристического парка Гуама, расположенного на болоте Сапата, общей площадью 10 499 квадратных километров в южной части провинции Матансас..</span>
+      <span class="text-sm lg:text-base">Крокодиловая ферма – место, где можно увидеть различных видов крокодилов и узнать об их разведении и охране.</span>
     </li>
     <li class="flex items-start space-x-3 text-gray-700 leading-relaxed">
       <span class="inline-block w-2 h-2 bg-blue-500 rounded-full mt-2 flex-shrink-0"></span>
-      <span class="text-sm lg:text-base">Посетите ферму «Fiesta Campesina». Вы сможете познакомиться с жизнью домашних и диких животных, а также с особенностями выращивания сельскохозяйственных культур на Кубе.</span>
+      <span class="text-sm lg:text-base">Залив Свиней – историческое место, связанное с интересными страницами кубинского прошлого.</span>
     </li>
     <li class="flex items-start space-x-3 text-gray-700 leading-relaxed">
       <span class="inline-block w-2 h-2 bg-blue-500 rounded-full mt-2 flex-shrink-0"></span>
-      <span class="text-sm lg:text-base">Посещение фермы по разведению крокодилов в Гуаме.</span>
+      <span class="text-sm lg:text-base">Пещера Рыб (Cueva de los Peces) – удивительный природный сенот, где можно купаться в кристально чистой воде и увидеть экзотических рыб.</span>
     </li>
     <li class="flex items-start space-x-3 text-gray-700 leading-relaxed">
       <span class="inline-block w-2 h-2 bg-blue-500 rounded-full mt-2 flex-shrink-0"></span>
-      <span class="text-sm lg:text-base">Сноркелинг и плавание в пещере «Cueva de los peces» в Карибском море. Множество возможностей для наблюдения за птицами.</span>
-    </li>
-    <li class="flex items-start space-x-3 text-gray-700 leading-relaxed">
-      <span class="inline-block w-2 h-2 bg-amber-500 rounded-full mt-2 flex-shrink-0"></span>
-      <span class="text-sm lg:text-base">
-        <strong class="text-amber-700">Обед</strong> в ресторане традиционной кубинской кухни
-        <span class="text-amber-600 font-medium ml-1">(средняя цена 15 долларов на человека)</span>
-      </span>
+      <span class="text-sm lg:text-base">Купание на пляжах Карибского моря – отдых на двух пляжах: песчаном и каменистом.Там можно заняться дайвингом, сноркелингом, наблюдать кораллы и рыб, а также покормить их прямо в воде.</span>
     </li>
     <li class="flex items-start space-x-3 text-gray-700 leading-relaxed">
       <span class="inline-block w-2 h-2 bg-blue-500 rounded-full mt-2 flex-shrink-0"></span>
-      <span class="text-sm lg:text-base">Посетите местный дом, где кормят колибри-пчёлок (самых маленьких птиц в мире). Вы сможете увидеть их в естественной среде обитания.</span>
+      <span class="text-sm lg:text-base">Обед в местном ресторане – по желанию можно попробовать экзотические кубинские блюда: черепаха, крокодил, рыба, олень, хутия, свинина, краб, лобстер или говядина.</span>
     </li>
     <li class="flex items-start space-x-3 text-gray-700 leading-relaxed">
       <span class="inline-block w-2 h-2 bg-blue-500 rounded-full mt-2 flex-shrink-0"></span>
-      <span class="text-sm lg:text-base">Прогулка на лодке по каналам Ла-Лагуна-дель-Тесоро, прекрасного природного озера глубиной 4 метра и площадью 9 квадратных километров, окруженного девственной растительностью, где водится множество форели.</span>
+      <span class="text-sm lg:text-base">Дом Колибри – волшебное место, где вы сможете увидеть самую маленькую птицу в мире — колибри, а также других кубинских птиц, таких как зунзун, в их естественной среде.</span>
     </li>
     <li class="flex items-start space-x-3 text-gray-700 leading-relaxed">
       <span class="inline-block w-2 h-2 bg-blue-500 rounded-full mt-2 flex-shrink-0"></span>
-      <span class="text-sm lg:text-base">Возвращение в отель</span>
+      <span class="text-sm lg:text-base">На обратном пути у вас будет возможность заехать на местный фруктовый рынок и попробовать свежие тропические фрукты Кубы.</span>
     </li>
   </ul>
 </section>
