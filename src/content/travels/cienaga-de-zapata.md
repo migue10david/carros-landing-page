@@ -7,6 +7,32 @@ images:
   - /images/cienaga-de-zapata/caribe7.jpeg
   - /images/cienaga-de-zapata/caribe6.jpeg
 order: 3
+feautures: [
+  {
+        src: '/images/cienaga-de-zapata/caribe.jpeg',
+        title: 'Cocodrilos',
+    },
+    {
+        src: '/images/cienaga-de-zapata/caribe3.jpeg',
+        title: 'Playa',
+    },
+    {
+        src: '/images/cienaga-de-zapata/caribe4.jpeg',
+        title: 'Zunzun',
+    },
+    {
+        src: '/images/cienaga-de-zapata/caribe7.jpeg',
+        title: 'Playa',
+    },
+    {
+        src: '/images/cienaga-de-zapata/caribe9.jpeg',
+        title: 'Buceo',
+    },
+    {
+        src: '/images/cienaga-de-zapata/la-cueva-de-los-peces.jpg',
+        title: 'Cueva de los peces',
+    }
+]
 ---
 
 

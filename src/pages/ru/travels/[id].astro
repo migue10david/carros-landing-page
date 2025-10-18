@@ -3,9 +3,7 @@ import { render } from "astro:content";
 import { getCollection, type CollectionEntry } from "astro:content";
 import Carousel from "../../../components/Carousel.astro";
 import Layout from "../../../layouts/Layout.astro";
-import { havanaPhotos } from "../../../mockedPhotos/havanaPhotos";
 import Features from "../../../components/Features.astro";
-import { HavanaTabs } from "@/components/HavanaTabs";
 import HavanaCard from "@/components/HavanaCard.astro";
 import { havanaTravelsRussian } from "@/lib/havana";
 import { HavanaRussianTabs } from "@/components/HavanaRussianTabs";
@@ -23,7 +21,7 @@ export async function getStaticPaths() {
 
 const { travel } = Astro.props;
 const { data,slug } = travel;
-const { title, description, images } = data;
+const { title, description, images, feautures } = data;
 const {Content} = await render(travel);
 ---
 
@@ -76,7 +74,7 @@ const {Content} = await render(travel);
         ) : null
       }
     </div>
-    <Features images={havanaPhotos}/>
+    <Features images={feautures}/>
   </div>
 </Layout>
 ---

@@ -7,6 +7,32 @@ images:
   - /images/cienaga-de-zapata/caribe7.jpeg
   - /images/cienaga-de-zapata/caribe6.jpeg
 order: 3
+feautures: [
+  {
+        src: '/images/cienaga-de-zapata/caribe.jpeg',
+        title: 'Cocodrilos',
+    },
+    {
+        src: '/images/cienaga-de-zapata/caribe3.jpeg',
+        title: 'Playa',
+    },
+    {
+        src: '/images/cienaga-de-zapata/caribe4.jpeg',
+        title: 'Zunzun',
+    },
+    {
+        src: '/images/cienaga-de-zapata/caribe7.jpeg',
+        title: 'Playa',
+    },
+    {
+        src: '/images/cienaga-de-zapata/caribe9.jpeg',
+        title: 'Buceo',
+    },
+    {
+        src: '/images/cienaga-de-zapata/la-cueva-de-los-peces.jpg',
+        title: 'Cueva de los peces',
+    }
+]
 ---
 
 <p class="mb-8 text-justify text-sm md:text-lg  dark:text-gray-300 leading-relaxed">
@@ -57,6 +83,6 @@ order: 3
 <div class="bg-gradient-to-r from-yellow-50 to-orange-50 border-l-4 border-yellow-400 p-4 lg:p-6 rounded-r-lg mb-8">
   <p class="text-sm lg:text-base text-gray-800 leading-relaxed">
     <span class="font-bold text-yellow-700">Рекомендуется:</span>
-    <span class="ml-2">лёгкая одежда, солнцезащитные очки, фотоаппарат, полотенце, головной убор, купальный костюм, солнцезащитный крем.</span>
+    <span class="ml-2">лёгкая одежда, солнцезащитные очки, фотоаппарат, полотенце, кепка, купальный костюм, солнцезащитный крем.</span>
   </p>
 </div>

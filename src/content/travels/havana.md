@@ -7,6 +7,40 @@ images:
   - /images/havana-tours/floridita.jpg
   - /images/havana-tours/plaza2.jpg
 order: 1
+feautures: [
+  {
+        src: '/images/havana-tours/bodeguita-del-medio.jpg',
+        title: 'Bodeguita del Medio',
+    },
+    {
+        src: '/images/havana-tours/Havana-capitolio.jpg',
+        title: 'Capitolio',
+    },
+    {
+        src: '/images/havana-tours/floridita.jpg',
+        title: 'Bar Floridita',
+    },
+    {
+        src: '/images/havana-tours/Cristo-De-La-Habana.jpg',
+        title: 'Christ Statue',
+    },
+    {
+        src: '/images/havana-tours/Plaza-de-la-revolucion.jpg',
+        title: 'Plaza de la Revolución',
+    },
+    {
+        src: '/images/havana-tours/ambos-mundos.jpg',
+        title: 'Hotel Ambos Mundos',
+    },
+    {
+        src: '/images/havana-tours/plaza-de-armas.jpg',
+        title: 'The Armory Square',
+    },
+    {
+        src: '/images/havana-tours/Malecon.jpg',
+        title: 'Malecón',
+    },
+]
 ---
 
 <p class="mb-8 text-justify text-sm md:text-lg dark:text-gray-300 leading-relaxed">
