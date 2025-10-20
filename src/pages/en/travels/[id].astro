@@ -34,14 +34,23 @@ const { Content } = await render(travel);
     </h1>
     <Carousel images={images} slug={slug} />
     <!-- Descripción -->
-    <p
-      class="mb-8 text-justify text-sm md:text-lg dark:text-gray-300 leading-relaxed"
-    >
-      {description}
-    </p>
+
+    {
+      description.map((text) => (
+        <p class="mb-8 text-justify text-sm md:text-lg dark:text-gray-300 leading-relaxed">
+          {text}
+        </p>
+      ))
+    }
 
     <Content />
-    {slug === "havana" ? <h1 class="pb-3 text-center  font-extrabold text-gray-900 dark:text-white text-2xl">Other excursions to Havana</h1> : null}
+    {
+      slug === "havana" ? (
+        <h1 class="pb-3 text-center  font-extrabold text-gray-900 dark:text-white text-2xl">
+          Other excursions to Havana
+        </h1>
+      ) : null
+    }
     {slug === "havana" ? <HavanaTabs client:load /> : null}
     <div class="flex flex-col gap-3">
       {

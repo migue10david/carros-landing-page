@@ -1,6 +1,8 @@
 ---
 title: The Caribbean Coast
-description: The Zapata Swamp is the largest and best preserved swamp in Cuba and one of the most important in the Caribbean, declared a biosphere reserve by UNESCO. This unique area offers amazing fauna, home to the Cuban crocodile, endemic birds and landscapes that combine mangroves, lagoons and tropical jungles. Nearby are charming places such as Playa Larga and Cueva de los peces, ideal for enjoying the charm of the Caribbean coast. We are prepared to accommodate your interests, so the itinerary is customized on the day of the trip to suit the needs of each client
+description: [
+  "The Zapata Swamp is the largest and best preserved swamp in Cuba and one of the most important in the Caribbean, declared a biosphere reserve by UNESCO. This unique area offers amazing fauna, home to the Cuban crocodile, endemic birds and landscapes that combine mangroves, lagoons and tropical jungles. Nearby are charming places such as Playa Larga and Cueva de los peces, ideal for enjoying the charm of the Caribbean coast. We are prepared to accommodate your interests, so the itinerary is customized on the day of the trip to suit the needs of each client"
+]
 images:
   - /images/cienaga-de-zapata/caribe2.jpeg
   - /images/cienaga-de-zapata/caribe4.jpeg

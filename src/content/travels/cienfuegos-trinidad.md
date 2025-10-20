@@ -1,6 +1,8 @@
 ---
 title: Cienfuegos-Trinidad
-description: For a single day tour this will be the best possibility to enjoy Trinidad city as it won`t have too much packed in one same day. This day we will just visit Cienfuegos and Trinidad. Departure early morning (7:00 am) and back to the hotel at about 7:00 pm. Enjoying country side, farming and small towns in the way among the attractions of the tour. There will be road stops if needed.
+description: [
+  "For a single day tour this will be the best possibility to enjoy Trinidad city as it won`t have too much packed in one same day. This day we will just visit Cienfuegos and Trinidad. Departure early morning (7:00 am) and back to the hotel at about 7:00 pm. Enjoying country side, farming and small towns in the way among the attractions of the tour. There will be road stops if needed."
+]
 images:
   - /images/cienfuegos/213153-Valle-Palace.avif
   - /images/cienfuegos/cienfuegos-palacio-ferer.jpg
