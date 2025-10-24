@@ -1,83 +1,47 @@
 ---
 title: Сьенфуэгос-Тринидад
 description: [
-  "Для однодневного тура — это лучший вариант, чтобы насладиться городом Тринидад, не перегружая день слишком большим количеством достопримечательностей. В этот день мы посетим только Сьенфуэгос и Тринидад. Выезд рано утром (7:00), возвращение в отель около 19:00. По пути вы сможете насладиться сельской местностью, фермами и небольшими городками, а также остановками по необходимости."
+  "Откройте  две самые очаровательные сокровища Кубы с помощью уникальной экскурсии, которая приведет вас в Сьенфуэгос и Тринидад. В Сьенфуэгосе, известном как Жемчужина Юга, полюбуйтесь его колониальной архитектурой и впечатляющей набережной, а также насладитесь его спокойной и утонченной атмосферой. Затем погрузитесь в историю и очарование Тринидада, внесенного в список Всемирного наследия, где мощеные улицы, разноцветные дома и оживленные площади перенесут вас в колониальное прошлое. Тур, полный культуры, истории, природы и пейзажей, который нельзя пропустить.",
+"По пути вы сможете насладиться сельской местностью, фермами и небольшими городками, а также остановками по необходимости."
 ]
 images:
-  - /images/cienfuegos/213153-Valle-Palace.avif
-  - /images/cienfuegos/cienfuegos-palacio-ferer.jpg
-  - /images/Trinidad/212939-Trinidad.jpg
-  - /images/Trinidad/Trinidad-plaza-mayor.avif
+  - /images/cienfuegos-trinidad/213153-Valle-Palace.avif
+  - /images/cienfuegos-trinidad/nicho2.jpeg
+  - /images/cienfuegos-trinidad/tatico-carro.jpeg
+  - /images/cienfuegos-trinidad/cienfuegos-palacio-ferer.jpg
 order: 4
 feautures: [
   {
-        src: '/images/havana-tours/bodeguita-del-medio.jpg',
-        title: 'Bodeguita del Medio',
+        src: '/images/cienfuegos-trinidad/Trinidad-Cuba-Church-Tower-Dusk-1600x1013.webp',
+        title: 'Church Tower',
     },
     {
-        src: '/images/havana-tours/Havana-capitolio.jpg',
-        title: 'Capitolio',
+        src: '/images/cienfuegos-trinidad/trinidad-cuba-old-centre.jpg',
+        title: 'Old Centre',
     },
     {
-        src: '/images/havana-tours/floridita.jpg',
-        title: 'Bar Floridita',
+        src: '/images/cienfuegos-trinidad/Trinidad-museo-romantico.jpg',
+        title: 'Romantic Museum',
     },
     {
-        src: '/images/havana-tours/Cristo-De-La-Habana.jpg',
-        title: 'Christ Statue',
+         src: '/images/cienfuegos-trinidad/Trinidad-plaza-mayor.avif',
+        title: 'Mayor Square',
     },
     {
-        src: '/images/havana-tours/Plaza-de-la-revolucion.jpg',
-        title: 'Plaza de la Revolución',
+        src: '/images/cienfuegos-trinidad/El-Nicho-Waterfalls.webp',
+        title: 'Nicho Waterfalls',
     },
     {
-        src: '/images/havana-tours/ambos-mundos.jpg',
-        title: 'Hotel Ambos Mundos',
+        src: '/images/cienfuegos-trinidad/flamingos.jpeg',
+        title: 'Guanaroca Lagoon',
     },
     {
-        src: '/images/havana-tours/plaza-de-armas.jpg',
-        title: 'The Armory Square',
+        src: '/images/cienfuegos-trinidad/trinidad.jpeg',
+        title: 'Cienfuegos Boardwalk',
     },
     {
-        src: '/images/havana-tours/Malecon.jpg',
-        title: 'Malecón',
+        src: '/images/cienfuegos-trinidad/Cienfuegos-parque-marti.jpg',
+        title: 'Cienfuegos Park',
     },
 ]
 ---
-
-<section class="mb-10">
-  <h2 class="text-2xl lg:text-3xl font-bold text-gray-900 mb-6 border-b-2 border-blue-500 pb-2">
-    Маршрут
-  </h2>
-
-  <ul class="space-y-3 lg:space-y-4">
-    <li class="flex items-start space-x-3 text-gray-700 leading-relaxed">
-      <span class="inline-block w-2 h-2 bg-blue-500 rounded-full mt-2 flex-shrink-0"></span>
-      <span class="text-sm lg:text-base">Встреча в отеле.</span>
-    </li>
-    <li class="flex items-start space-x-3 text-gray-700 leading-relaxed">
-      <span class="inline-block w-2 h-2 bg-blue-500 rounded-full mt-2 flex-shrink-0"></span>
-      <span class="text-sm lg:text-base">Обзорная экскурсия по городу Тринидад: главная площадь, городская церковь, дом гончаров, блошиный рынок, бар «Канчанчара».</span>
-    </li>
-    <li class="flex items-start space-x-3 text-gray-700 leading-relaxed">
-      <span class="inline-block w-2 h-2 bg-blue-500 rounded-full mt-2 flex-shrink-0"></span>
-      <span class="text-sm lg:text-base">Обед в ресторане с типичной кубинской кухней (средняя цена 15–20 USD на человека).</span>
-    </li>
-    <li class="flex items-start space-x-3 text-gray-700 leading-relaxed">
-      <span class="inline-block w-2 h-2 bg-blue-500 rounded-full mt-2 flex-shrink-0"></span>
-      <span class="text-sm lg:text-base">Посещение города Сьенфуэгос: Центральный парк, набережная Прасадо, дворец Валье и другие культурно-исторические достопримечательности.</span>
-    </li>
-    <li class="flex items-start space-x-3 text-gray-700 leading-relaxed">
-      <span class="inline-block w-2 h-2 bg-blue-500 rounded-full mt-2 flex-shrink-0"></span>
-      <span class="text-sm lg:text-base">Возвращение в отель.</span>
-    </li>
-  </ul>
-</section>
-
-<div class="bg-gradient-to-r from-yellow-50 to-orange-50 border-l-4 border-yellow-400 p-4 lg:p-6 rounded-r-lg mb-8">
-  <p class="text-sm lg:text-base text-gray-800 leading-relaxed">
-    <span class="font-bold text-yellow-700">Рекомендуется:</span>
-    <span class="ml-2">лёгкая одежда, солнцезащитные очки, фотоаппарат, головной убор.</span>
-  </p>
-</div>
-

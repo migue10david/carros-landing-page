@@ -5,9 +5,12 @@ import Carousel from "../../../components/Carousel.astro";
 import Layout from "../../../layouts/Layout.astro";
 import Features from "../../../components/Features.astro";
 import HavanaCard from "@/components/HavanaCard.astro";
-import { havanaTravelsRussian } from "@/lib/havana";
+import {
+  havanaTravelsRussian,
+  cienfuegosTrinidadRussianTravels,
+} from "@/lib/havana";
 import { HavanaRussianTabs } from "@/components/HavanaRussianTabs";
-
+import { CienfuegosTrinidadRussianTabs } from "@/components/CienfuegosTrinidadRussianTabs";
 
 export async function getStaticPaths() {
   const travels = await getCollection("rusian");
@@ -20,36 +23,56 @@ export async function getStaticPaths() {
 }
 
 const { travel } = Astro.props;
-const { data,slug } = travel;
+const { data, slug } = travel;
 const { title, description, images, feautures } = data;
-const {Content} = await render(travel);
+const { Content } = await render(travel);
 ---
 
 <Layout title={title}>
   <div class="mx-auto max-w-7xl px-5 py-12 sm:py-16 lg:px-8">
     <!-- Título -->
-    <h1 class="mb-6 text-center text-3xl font-extrabold text-gray-900 dark:text-white sm:text-4xl">
-      {title === "Матансас" || title === "Карибское побережье" ? "Экскурсия" : "Экскурсии"} в {title === "Гавана" ? "Гавану" : title}
+    <h1
+      class="mb-6 text-center text-3xl font-extrabold text-gray-900 dark:text-white sm:text-4xl"
+    >
+      {
+        title === "Матансас" || title === "Карибское побережье"
+          ? "Экскурсия"
+          : "Экскурсии"
+      } в {title === "Гавана" ? "Гавану" : title}
     </h1>
-      <Carousel  images={images} slug={slug} />
+    <Carousel images={images} />
     <!-- Descripción -->
-    <p class="mb-8  text-justify text-sm md:text-lg  dark:text-gray-300 leading-relaxed">
+    <p
+      class="mb-8 text-justify text-sm md:text-lg dark:text-gray-300 leading-relaxed"
+    >
       {description}
     </p>
 
-      <Content />
-      {slug === "havana" ? <h1 class="pb-3 text-center  font-extrabold text-gray-900 dark:text-white text-2xl">Другие экскурсии в Гавану</h1> : null}
-      {
-        slug === "havana" ? <HavanaRussianTabs client:load /> : null
-      }
-      <div class="flex flex-col gap-3">
+    <Content />Сьенфуэгос-Тринидад
+    {
+      slug === "havana" ? (
+        <h1 class="pb-3 text-center  font-extrabold text-gray-900 dark:text-white text-2xl">
+          Другие экскурсии в Гавану
+        </h1>
+      ) : null
+    }
+    {
+      slug === "havana" ? (
+        <h1 class="pb-3 text-center  font-extrabold text-gray-900 dark:text-white text-2xl">
+          Другие экскурсии в Сьенфуэгос-Тринидад
+        </h1>
+      ) : null
+    }
+    {slug === "havana" ? <HavanaRussianTabs client:load /> : null}
+    <div class="flex flex-col gap-3">
       {
         slug === "havana" ? (
           <HavanaCard
             title={havanaTravelsRussian[0].title}
             description={havanaTravelsRussian[0].description}
             images={havanaTravelsRussian[0].images}
-            slug={havanaTravelsRussian[0].slug}
+            slug={slug}
+            link={havanaTravelsRussian[0].link}
           />
         ) : null
       }
@@ -59,7 +82,8 @@ const {Content} = await render(travel);
             title={havanaTravelsRussian[1].title}
             description={havanaTravelsRussian[1].description}
             images={havanaTravelsRussian[1].images}
-            slug={havanaTravelsRussian[1].slug}
+            slug={slug}
+            link={havanaTravelsRussian[1].link}
           />
         ) : null
       }
@@ -69,12 +93,43 @@ const {Content} = await render(travel);
             title={havanaTravelsRussian[2].title}
             description={havanaTravelsRussian[2].description}
             images={havanaTravelsRussian[2].images}
-            slug={havanaTravelsRussian[2].slug}
+            slug={slug}
+            link={havanaTravelsRussian[2].link}
           />
         ) : null
       }
+
+      {
+        slug === "cienfuegos-trinidad" ? (
+          <CienfuegosTrinidadRussianTabs client:load />
+        ) : null
+      }
+      <div class="flex flex-col gap-3">
+        {
+          slug === "cienfuegos-trinidad" ? (
+            <HavanaCard
+              title={cienfuegosTrinidadRussianTravels[0].title}
+              description={cienfuegosTrinidadRussianTravels[0].description}
+              images={cienfuegosTrinidadRussianTravels[0].images}
+              slug={slug}
+              link={cienfuegosTrinidadRussianTravels[0].link}
+            />
+          ) : null
+        }
+        {
+          slug === "cienfuegos-trinidad" ? (
+            <HavanaCard
+              title={cienfuegosTrinidadRussianTravels[1].title}
+              description={cienfuegosTrinidadRussianTravels[1].description}
+              images={cienfuegosTrinidadRussianTravels[1].images}
+              slug={slug}
+              link={cienfuegosTrinidadRussianTravels[1].link}
+            />
+          ) : null
+        }
+      </div>
+      <Features images={feautures} />
     </div>
-    <Features images={feautures}/>
   </div>
+  ---
 </Layout>
----

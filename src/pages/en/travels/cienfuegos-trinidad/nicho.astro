@@ -1,0 +1,115 @@
+---
+import Carousel from "@/components/Carousel.astro";
+import Layout from "@/layouts/Layout.astro";
+import { cienfuegosTrinidadTravels } from "@/lib/havana";
+import { getLangFromUrl, useTranslation } from "@/i18n/utils";
+import Features from "@/components/Features.astro";
+import { canyonPhotos, nichoPhotos } from "@/mockedPhotos/havanaPhotos";
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslation(lang);
+---
+
+<Layout title="Nicho">
+  <div class="mx-auto max-w-7xl px-5 py-12 sm:py-16 lg:px-8">
+    <!-- Título -->
+    <div class="flex flex-col items-start pb-4">
+      <a
+        href={`/${lang}/travels/cienfuegos-trinidad`}
+        class="group inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 text-gray-700 dark:text-gray-300 font-medium hover:shadow-md transition-all duration-300 hover:-translate-x-1"
+      >
+        <svg
+          class="w-4 h-4 transition-transform duration-300 group-hover:-translate-x-1"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M10 19l-7-7m0 0l7-7m-7 7h18"></path>
+        </svg>
+        Return
+      </a>
+      <h1
+        class="mt-2 text-start text-2xl font-semibold tracking-tight text-gray-900 dark:text-white sm:text-3xl md:text-4xl leading-tight"
+      >
+        Excursions to {cienfuegosTrinidadTravels[1].title}
+      </h1>
+    </div>
+    <Carousel images={cienfuegosTrinidadTravels[1].images}/>
+    <!-- Descripción -->
+    <p
+      class=" text-justify text-sm md:text-lg dark:text-gray-300 leading-relaxed"
+    >
+      {cienfuegosTrinidadTravels[1].description}
+      <h2 class="text-2xl lg:text-2xl font-bold text-gray-900 mb-6 pt-2">
+                  Places to visit:
+                </h2>
+                 <ul class="space-y-3 lg:space-y-4">
+                  <li class="flex items-start space-x-3 text-gray-700 leading-relaxed">
+                    '
+                    <span class="inline-block w-2 h-2 bg-blue-500 rounded-full mt-2 flex-shrink-0"></span>
+                    <span class="text-sm lg:text-base">
+                      El Nicho: known for its impressive mountain scenery and
+                      lush vegetation. There you will have the opportunity to
+                      bathe in its crystalline waterfalls and natural pools.
+                    </span>
+                  </li>
+                  <li class="flex items-start space-x-3 text-gray-700 leading-relaxed">
+                    <span class="inline-block w-2 h-2 bg-blue-500 rounded-full mt-2 flex-shrink-0"></span>
+                    <span class="text-sm lg:text-base">
+                      {" "}
+                      The city of Trinidad is located in the province of Sancti
+                      Spiritus. It is one of the oldest and best conserved
+                      cities in the country.
+                    </span>
+                  </li>
+                  <li class="flex items-start space-x-3 text-gray-700 leading-relaxed">
+                    <span class="inline-block w-2 h-2 bg-blue-500 rounded-full mt-2 flex-shrink-0"></span>
+                    <span class="text-sm lg:text-base">
+                      In Trinidad we will visit the historical center, the Major
+                      square, the museum of the city, the local church, and
+                      other interesting places.
+                    </span>
+                  </li>
+                  <li class="flex items-start space-x-3 text-gray-700 leading-relaxed">
+                    <span class="inline-block w-2 h-2 bg-blue-500 rounded-full mt-2 flex-shrink-0"></span>
+                    <span class="text-sm lg:text-base">
+                      {" "}
+                      We also visit the province of Cienfuegos known for its
+                      beautiful boardwalk, its bay, its neoclassical
+                      architecture and its vibrant cultural life.
+                    </span>
+                  </li>
+                  <li class="flex items-start space-x-3 text-gray-700 leading-relaxed">
+                    <span class="inline-block w-2 h-2 bg-blue-500 rounded-full mt-2 flex-shrink-0"></span>
+                    <span class="text-sm lg:text-base">
+                      Panoramic tour along the Cienfuegos boardwalk, where you
+                      can enjoy beautiful views and see the baseball stadium,
+                      the hospital and several important places in the province.
+                    </span>
+                  </li>
+                  <li class="flex items-start space-x-3 text-gray-700 leading-relaxed">
+                    <span class="inline-block w-2 h-2 bg-blue-500 rounded-full mt-2 flex-shrink-0"></span>
+                    <span class="text-sm lg:text-base">
+                      Hotel Jawa : located in the center of the city with an
+                      architecture that reflects the colonial style of the area.
+                    </span>
+                  </li>
+                  <li class="flex items-start space-x-3 text-gray-700 leading-relaxed">
+                    <span class="inline-block w-2 h-2 bg-blue-500 rounded-full mt-2 flex-shrink-0"></span>
+                    <span class="text-sm lg:text-base">
+                      We will visit the city center, the central park, the
+                      Cienfuegos boulevard, the Tomás Terry theater and other
+                      interesting places.
+                    </span>
+                  </li>
+                </ul>
+        <div>
+        <Features images={nichoPhotos} />
+    </div>
+  </div>
+</Layout>

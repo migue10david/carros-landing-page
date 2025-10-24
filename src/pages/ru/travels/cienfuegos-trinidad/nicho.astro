@@ -1,0 +1,125 @@
+---
+import Carousel from "@/components/Carousel.astro";
+import Layout from "@/layouts/Layout.astro";
+import { cienfuegosTrinidadRussianTravels, cienfuegosTrinidadTravels } from "@/lib/havana";
+import { getLangFromUrl, useTranslation } from "@/i18n/utils";
+import Features from "@/components/Features.astro";
+import { canyonPhotos, nichoPhotos } from "@/mockedPhotos/havanaPhotos";
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslation(lang);
+---
+
+<Layout title="Nicho">
+  <div class="mx-auto max-w-7xl px-5 py-12 sm:py-16 lg:px-8">
+    <!-- Título -->
+    <div class="flex flex-col items-start pb-4">
+      <a
+        href={`/${lang}/travels/cienfuegos-trinidad`}
+        class="group inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 text-gray-700 dark:text-gray-300 font-medium hover:shadow-md transition-all duration-300 hover:-translate-x-1"
+      >
+        <svg
+          class="w-4 h-4 transition-transform duration-300 group-hover:-translate-x-1"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M10 19l-7-7m0 0l7-7m-7 7h18"></path>
+        </svg>
+        возвращаться
+      </a>
+      <h1
+        class="mt-2 text-start text-2xl font-semibold tracking-tight text-gray-900 dark:text-white sm:text-3xl md:text-4xl leading-tight"
+      >
+         {cienfuegosTrinidadRussianTravels[1].title}
+      </h1>
+    </div>
+    <Carousel images={cienfuegosTrinidadRussianTravels[1].images} />
+    <!-- Descripción -->
+    <p
+      class="text-justify text-sm md:text-lg dark:text-gray-300 leading-relaxed"
+    >
+      {cienfuegosTrinidadRussianTravels[1].description}
+      <h2 class="text-2xl lg:text-2xl font-bold text-gray-900 mb-6 pt-2">
+        Места для посещения:
+      </h2>
+      <ul class="space-y-3 lg:space-y-4">
+        <li class="flex items-start space-x-3 text-gray-700 leading-relaxed">
+          '
+          <span
+            class="inline-block w-2 h-2 bg-blue-500 rounded-full mt-2 flex-shrink-0"
+          ></span>
+          <span class="text-sm lg:text-base">
+            Эль-Ничо: известен своими впечатляющими горными пейзажами и пышной
+            растительностью. Там у вас будет возможность купаться в кристально
+            чистых водопадах и природных бассейнах.
+          </span>
+        </li>
+        <li class="flex items-start space-x-3 text-gray-700 leading-relaxed">
+          <span
+            class="inline-block w-2 h-2 bg-blue-500 rounded-full mt-2 flex-shrink-0"
+          ></span>
+          <span class="text-sm lg:text-base">
+            Город Тринидад расположен в провинции Санкти-Спиритус. Это один из
+            самых старых и лучше всего сохранившихся городов страны.
+          </span>
+        </li>
+        <li class="flex items-start space-x-3 text-gray-700 leading-relaxed">
+          <span
+            class="inline-block w-2 h-2 bg-blue-500 rounded-full mt-2 flex-shrink-0"
+          ></span>
+          <span class="text-sm lg:text-base">
+            В Тринидаде мы посетим исторический центр, главную площадь,
+            городской музей, городскую церковь и другие интересные места.
+          </span>
+        </li>
+        <li class="flex items-start space-x-3 text-gray-700 leading-relaxed">
+          <span
+            class="inline-block w-2 h-2 bg-blue-500 rounded-full mt-2 flex-shrink-0"
+          ></span>
+          <span class="text-sm lg:text-base">
+            Мы также посетим провинцию Сьенфуэгос, известную своей красивой
+            набережной, бухтой, неоклассической архитектурой и яркой культурной
+            жизнью.
+          </span>
+        </li>
+        <li class="flex items-start space-x-3 text-gray-700 leading-relaxed">
+          <span
+            class="inline-block w-2 h-2 bg-blue-500 rounded-full mt-2 flex-shrink-0"
+          ></span>
+          <span class="text-sm lg:text-base">
+            Панорамная экскурсия по набережной в Сьенфуэгосе, где вы сможете
+            насладиться прекрасными видами, а также увидеть бейсбольный стадион,
+            больницу и несколько важных мест провинции.
+          </span>
+        </li>
+        <li class="flex items-start space-x-3 text-gray-700 leading-relaxed">
+          <span
+            class="inline-block w-2 h-2 bg-blue-500 rounded-full mt-2 flex-shrink-0"
+          ></span>
+          <span class="text-sm lg:text-base">
+            Отель Jawa: расположен в центре города и имеет архитектуру,
+            отражающую колониальный стиль этого района.
+          </span>
+        </li>
+        <li class="flex items-start space-x-3 text-gray-700 leading-relaxed">
+          <span
+            class="inline-block w-2 h-2 bg-blue-500 rounded-full mt-2 flex-shrink-0"
+          ></span>
+          <span class="text-sm lg:text-base">
+            Мы также посетим центр города, центральный парк, бульвар
+            Сьенфуэгоса, театр Томаса Терри и другие интересные места.
+          </span>
+        </li>
+      </ul>
+      <div>
+        <Features images={nichoPhotos} />
+      </div>
+    </p>
+  </div>
+</Layout>

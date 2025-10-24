@@ -9,7 +9,7 @@ export const havanaTravels = [
       "/images/havana-tours/hemingway3.jpg",
       "/images/havana-tours/hemingway4.jpg",
     ],
-    slug: "hemingway",
+    link: "hemingway",
   },
   {
     title: " Havana + Sunset",
@@ -21,7 +21,7 @@ export const havanaTravels = [
       "/images/havana-tours/sunset3.jpg",
       "/images/havana-tours/sunset4.jpg",
     ],
-    slug: "sunset",
+    link: "sunset",
   },
   {
     title: "Cañonazo",
@@ -33,7 +33,7 @@ export const havanaTravels = [
       "/images/havana-tours/canonazo5.jpeg",
       "/images/havana-tours/08-1140.jpg",
     ],
-    slug: "cañonazo",
+    link: "cañonazo",
   },
 ];
 
@@ -48,7 +48,7 @@ export const havanaTravelsRussian = [
       "/images/havana-tours/hemingway3.jpg",
       "/images/havana-tours/hemingway4.jpg",
     ],
-    slug: "hemingway",
+    link: "hemingway",
   },
   {
     title: "Гавана + закат",
@@ -60,7 +60,7 @@ export const havanaTravelsRussian = [
       "/images/havana-tours/sunset3.jpg",
       "/images/havana-tours/sunset4.jpg",
     ],
-    slug: "sunset",
+    link: "sunset",
   },
   {
     title: "Гавана + Церемония «Каньонасо»",
@@ -72,6 +72,57 @@ export const havanaTravelsRussian = [
       "/images/havana-tours/canonazo5.jpeg",
       "/images/havana-tours/08-1140.jpg",
     ],
-    slug: "cañonazo",
+    link: "cañonazo",
+  },
+];
+
+export const cienfuegosTrinidadTravels = [
+  {
+    title: "Trinidad + Cienfuegos + Flamingos",
+    description: "On this excursion you will explore the historic cities of Trinidad, with its charming colonial center, and Cienfuegos, known for its neoclassical architecture and beautiful promenade. You can also make your experience even more special by visiting the Guararanoca Lagoon for a boat ride to see flamingos in their natural habitat. Please note that departures from the hotel are usually early between 5 and 6 am to make the most of the day. This is a complete introduction to Cuban culture, nature and beauty.",
+    images: [
+      "/images/cienfuegos-trinidad/flamingos.jpeg",
+      "/images/cienfuegos-trinidad/Trinidad-plaza-mayor.avif",
+      "/images/cienfuegos-trinidad/Cienfuegos-parque-marti.jpg",
+      "/images/cienfuegos-trinidad/Trinidad.jpg",
+    ],
+    link: "flamingos",
+  },
+  {
+    title: "Trinidad + Cienfuegos + El Nicho",
+    description: "During this tour you will explore the historic cities of Trinidad, with its charming colonial center, and Cienfuegos, known for its neoclassical architecture and beautiful promenade. You will also have the opportunity to go into nature to see the impressive Nicho Waterfalls and swim in its crystal clear waters.  Please note that departure is usually early, between 5 and 6 am, to make the most of the day. This is a complete introduction to Cuban culture, nature and beauty.",
+    images: [
+      "/images/cienfuegos-trinidad/nicho2.jpeg",
+      "/images/cienfuegos-trinidad/Trinidad-Cuba-Church-Tower-Dusk-1600x1013.webp",
+      "/images/cienfuegos-trinidad/Trinidad-museo-romantico.jpg",
+      "/images/cienfuegos-trinidad/tatico-carro.jpeg",
+    ],
+    link: "nicho",
+  },
+];
+
+export const cienfuegosTrinidadRussianTravels = [
+  {
+    title: "Тринидад + Сьенфуэгос + фламинго",
+    description:
+      "Во время этого тура вы познакомитесь с историческими городами Тринидад с его очаровательным колониальным центром и Сьенфуэгос, известный своей неоклассической архитектурой и прекрасной набережной. Вы также можете сделать свои впечатления еще более особенными, посетив лагуну Гуаранока и получив возможность, катаясь на лодке, увидеть фламинго в их естественной среде обитания. Обратите внимание, что отправление обычно происходит рано, между 5 и 6 часами утра, чтобы максимально использовать день. Это полное знакомство с кубинской культурой, природой и красотой.",
+    images: [
+      "/images/cienfuegos-trinidad/flamingos.jpeg",
+      "/images/cienfuegos-trinidad/Trinidad-plaza-mayor.avif",
+      "/images/cienfuegos-trinidad/Cienfuegos-parque-marti.jpg",
+      "/images/cienfuegos-trinidad/Trinidad.jpg",
+    ],
+    link: "flamingos",
+  },
+  {
+    title: "Тринидад + Сьенфуэгос + Эль-Ничо ",
+    description: "Во время этой экскурсии вы познакомитесь с историческими городами Тринидад с его очаровательным колониальным центром и Сьенфуэгос, известный своей неоклассической архитектурой и красивой набережной. У вас также будет возможность отправиться на природу, чтобы увидеть впечатляющие водопады Ничо и купаться в их кристально чистой воде.  Пожалуйста, обратите внимание, что выезд обычно ранний, между 5 и 6 утра, чтобы максимально использовать день. Это полное знакомство с кубинской культурой, природой и красотой.",
+    images: [
+      "/images/cienfuegos-trinidad/nicho2.jpeg",
+      "/images/cienfuegos-trinidad/Trinidad-Cuba-Church-Tower-Dusk-1600x1013.webp",
+      "/images/cienfuegos-trinidad/Trinidad-museo-romantico.jpg",
+      "/images/cienfuegos-trinidad/tatico-carro.jpeg",
+    ],
+    link: "nicho",
   },
 ];

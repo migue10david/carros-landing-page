@@ -98,3 +98,41 @@ export const sunsetPhotos = [
         title: "Hotel Nacional"
     }
 ]
+
+export const flamingosPhotos = [
+     {
+        src: "/images/cienfuegos-trinidad/flamingos.jpeg",
+        title: "Guanaroca Lagoon"
+    },
+    {
+        src: "/images/cienfuegos-trinidad/guanaroca-lagoon-634642.jpg",
+        title: "Guanaroca Lagoon"
+    },
+    {
+        src: "/images/cienfuegos-trinidad/Laguna-Guanaroca-Cienfuegos.jpg",
+        title: "Guanaroca Lagoon"
+    },
+    {
+        src: "/images/cienfuegos-trinidad/colonia-de-flamencos.jpg",
+        title: "Guanaroca Lagoon"
+    }
+]
+
+export const nichoPhotos = [
+    {
+        src: "/images/cienfuegos-trinidad/El-Nicho-Waterfalls.webp",
+        title: "Nicho Waterfalls"
+    },
+    {
+        src: "/images/cienfuegos-trinidad/nicho2.jpeg",
+        title: "Nicho Waterfalls"
+    },
+    {
+        src: "/images/cienfuegos-trinidad/26-12-el-nicho-1024x768_2.jpg",
+        title: "Nicho Waterfalls"
+    },
+    {
+        src: "/images/cienfuegos-trinidad/paisaje2.jpg",
+        title: "Nicho Waterfalls"
+    }
+]

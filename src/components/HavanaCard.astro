@@ -11,14 +11,15 @@ interface Props {
   description: string;
   images: string[];
   slug: string;
+  link: string;
 }
 
-const { title, description, images, slug } = Astro.props;
+const { title, description, images, slug, link } = Astro.props;
 ---
 
 <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700 overflow-hidden flex flex-col md:hidden">
   <!-- Contenedor de imagen con altura fija -->
-  <a href={`/${lang}/travels/havana/${slug}`}>
+  <a href={`/${lang}/travels/${slug}/${link}`}>
     <img
       src={images[0]}
       alt={title}
@@ -34,7 +35,7 @@ const { title, description, images, slug } = Astro.props;
     <p class="mb-3 font-normal text-gray-700 dark:text-gray-400 line-clamp-3">
       {description}
     </p>
-     <a href={`/${lang}/travels/havana/${slug}`}
+     <a href={`/${lang}/travels/${slug}/${link}`}
       class="self-start inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
     >
       {t("readMore")}

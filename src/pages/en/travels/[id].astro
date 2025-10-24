@@ -6,7 +6,9 @@ import Layout from "../../../layouts/Layout.astro";
 import Features from "../../../components/Features.astro";
 import { HavanaTabs } from "@/components/HavanaTabs";
 import { havanaTravels } from "@/lib/havana";
+import { cienfuegosTrinidadTravels } from "@/lib/havana";
 import HavanaCard from "@/components/HavanaCard.astro";
+import { CienfuegosTrinidadTabs } from "@/components/CienfuegosTrinidadTabs";
 
 export async function getStaticPaths() {
   const travels = await getCollection("travels");
@@ -32,7 +34,7 @@ const { Content } = await render(travel);
     >
       Excursion to {title === "Havana" ? "Colonial Havana" : title}
     </h1>
-    <Carousel images={images} slug={slug} />
+    <Carousel images={images} />
     <!-- Descripción -->
 
     {
@@ -51,6 +53,13 @@ const { Content } = await render(travel);
         </h1>
       ) : null
     }
+    {
+      slug === "cienfuegos-trinidad" ? (
+        <h1 class="pb-3 text-center  font-extrabold text-gray-900 dark:text-white text-2xl">
+          Other excursions to Cienfuegos - Trinidad
+        </h1>
+      ) : null
+    }
     {slug === "havana" ? <HavanaTabs client:load /> : null}
     <div class="flex flex-col gap-3">
       {
@@ -59,7 +68,8 @@ const { Content } = await render(travel);
             title={havanaTravels[0].title}
             description={havanaTravels[0].description}
             images={havanaTravels[0].images}
-            slug={havanaTravels[0].slug}
+            slug={slug}
+            link={havanaTravels[0].link}
           />
         ) : null
       }
@@ -69,7 +79,8 @@ const { Content } = await render(travel);
             title={havanaTravels[1].title}
             description={havanaTravels[1].description}
             images={havanaTravels[1].images}
-            slug={havanaTravels[1].slug}
+            slug={slug}
+            link={havanaTravels[1].link}
           />
         ) : null
       }
@@ -79,7 +90,34 @@ const { Content } = await render(travel);
             title={havanaTravels[2].title}
             description={havanaTravels[2].description}
             images={havanaTravels[2].images}
-            slug={havanaTravels[2].slug}
+            slug={slug}
+            link={havanaTravels[2].link}
+          />
+        ) : null
+      }
+
+
+   {slug === "cienfuegos-trinidad" ? <CienfuegosTrinidadTabs client:load /> : null}
+    <div class="flex flex-col gap-3">
+      {
+        slug === "cienfuegos-trinidad" ? (
+          <HavanaCard
+            title={cienfuegosTrinidadTravels[0].title}
+            description={cienfuegosTrinidadTravels[0].description}
+            images={cienfuegosTrinidadTravels[0].images}
+            slug={slug}
+            link={cienfuegosTrinidadTravels[0].link}
+          />
+        ) : null
+      }
+      {
+        slug === "cienfuegos-trinidad" ? (
+          <HavanaCard
+            title={cienfuegosTrinidadTravels[1].title}
+            description={cienfuegosTrinidadTravels[1].description}
+            images={cienfuegosTrinidadTravels[1].images}
+            slug={slug}
+            link={cienfuegosTrinidadTravels[1].link}
           />
         ) : null
       }
