@@ -46,7 +46,7 @@ const features = [
     <!-- Contenido principal -->
     <div class="grid lg:grid-cols-2 gap-10 items-center">
       <!-- Texto izquierdo -->
-      <div class="space-y-6">
+      <div class="space-y-6 animated fadeInLeft">
         <!-- Badge -->
         <span
           class="inline-block px-4 py-2 bg-gradient-to-r from-blue-500 to-cyan-600 text-white text-sm font-medium rounded-full"
@@ -87,7 +87,7 @@ const features = [
       <!-- Galería derecha (5 fotos) -->
       <!-- Galería: Solo visible en desktop (lg+) -->
 
-      <div class="hidden lg:grid grid-cols-4 grid-rows-4 gap-4">
+      <div class="hidden lg:grid grid-cols-4 grid-rows-4 gap-4 animated fadeInRight">
         <div class="col-span-2 row-span-2">
           <img
             src={images[0].src}
@@ -127,7 +127,7 @@ const features = [
     </div>
 
     <!-- Características esenciales (una sola fila) -->
-    <div class="mt-12 bg-white dark:bg-gray-800 rounded-2xl shadow-md border border-blue-100 dark:border-gray-700 p-6">
+    <div class="mt-12 bg-white dark:bg-gray-800 rounded-2xl shadow-md border border-blue-100 dark:border-gray-700 p-6 animated fadeIn">
   <div class="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-6 text-sm sm:text-base">
     {features.map((feature, index) => (
       <div class="flex items-center gap-2">
