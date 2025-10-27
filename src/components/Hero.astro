@@ -28,6 +28,7 @@ const images = [
 ];
 
 import { getLangFromUrl, useTranslation } from "../i18n/utils";
+import { Image } from 'astro:assets';
 
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslation(lang);
