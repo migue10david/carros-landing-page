@@ -25,6 +25,11 @@ export const ui = {
     navbar_contact: "Contact",
     features: "Some places to visit:",
     readMore: "Read more",
+    contactUsW: "Contact us through Whatsapp",
+    contactUsT: "Contact us through Telegram",
+    contactDescription: "Contact us immediately and we will help you plan your ideal excursion with a fast answer and a personalized attention. ",
+    bookNow: "Book now",
+    writeNow: "Write now"
     
   },
   ru: {
@@ -46,5 +51,10 @@ export const ui = {
     navbar_contact: "Контакт",
     features: "Некоторые места для посещения:",
     readMore: "Узнать больше",
+     contactUsW: "Свяжитесь с нами через WhatsApp",
+    contactUsT: "Свяжитесь с нами через Telegram",
+    contactDescription: "Свяжитесь с нами напрямую, и мы поможем вам организовать идеальную экскурсию, обеспечив быстрый ответ и личное внимание.",
+    bookNow: "Забронировать сейчас.",
+    writeNow: "Напишите сейчас"
     },
 } as const;
