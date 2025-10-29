@@ -5,12 +5,17 @@ import { havanaTravels } from "@/lib/havana";
 import { getLangFromUrl, useTranslation } from "@/i18n/utils";
 import Features from "@/components/Features.astro";
 import { canyonPhotos } from "@/mockedPhotos/havanaPhotos";
+import { SITE_NAME, SITE_LOGO } from "@/content/site";
+
+const title = "Cañonazo";
+const description = "Cañonazo" + " - " + SITE_NAME;
+const image = SITE_LOGO;
 
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslation(lang);
 ---
 
-<Layout title="Cañonazo">
+<Layout title={title} description={description} image={image}>
   <div class="mx-auto max-w-7xl px-5 py-12 sm:py-16 lg:px-8">
     <!-- Título -->
     <div class="flex flex-col items-start pb-4">

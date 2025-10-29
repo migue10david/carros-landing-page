@@ -1,11 +1,24 @@
 ---
 import Welcome from "../../components/Welcome.astro";
 import Layout from "../../layouts/Layout.astro";
+import { SITE_NAME, SITE_LOGO } from "../../content/site";
+import { getLangFromUrl } from "../../i18n/utils";
 
+const title = "Home";
 
+const description = "Home" + " - " + SITE_NAME;
+
+const image = SITE_LOGO;
+
+const routeLang = getLangFromUrl(Astro.url);
+const lang = routeLang ?? "en";
 
 ---
 
-<Layout title='Cuba Easy Tours'>
-	<Welcome />
+<Layout
+  title={title}
+  description={description}
+  image={image}
+>
+  <Welcome />
 </Layout>
