@@ -33,11 +33,8 @@ const routeLang = getLangFromUrl(Astro.url);
 const lang = routeLang ?? "en";
 
 // Construir URL canónica
-const pathname = Astro.url.pathname;
-
-const url: string = "";
+const url = Astro.url.pathname;
 const noIndex: boolean = false;
-
 ---
 
 <Layout
@@ -55,7 +52,7 @@ const noIndex: boolean = false;
     >
       Excursion to {title === "Havana" ? "Colonial Havana" : title}
     </h1>
-    <Carousel images={images} />
+    <Carousel images={images} lang={lang}/>
     <!-- Descripción -->
 
     {

@@ -1,9 +1,17 @@
 ---
 import Layout from "../../layouts/Layout.astro";
 import ContactUs from "@/components/ContactUs.astro";
+import { SITE_NAME, SITE_LOGO } from "../../content/site";
+
+const title = "Contact us";
+const description = "Contact us" + " - " + SITE_NAME;
+const image = SITE_LOGO;
 ---
 
-<Layout title="Contáctanos - Cuba Easy Tours">
-
-<ContactUs/>
+<Layout
+  title={title}
+  description={description}
+  image={image}
+>
+    <ContactUs/>
 </Layout>

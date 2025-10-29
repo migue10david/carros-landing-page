@@ -1,9 +1,12 @@
 ---
+import { Image } from "astro:assets";
+
 interface Props {
   images: string[];
+  lang: string;
 }
 
-const { images } = Astro.props;
+const { images, lang } = Astro.props;
 ---
 
 <div class="mb-8 lg:mb-12">
@@ -14,10 +17,13 @@ const { images } = Astro.props;
       {
         images.map((image) => (
           <li class="w-full">
-            <img
+            <Image
               src={image}
-              alt="Vista panorámica de La Habana"
+              alt={lang==="en" ? "Panoramic view of Havana" : "Панорамный вид на Гавану"}
+              width={1200} 
+              height={500} 
               class="w-full h-64 sm:h-80 md:h-96 lg:h-[500px] object-cover"
+              format="webp"
             />
           </li>
         ))
