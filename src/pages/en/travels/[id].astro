@@ -9,6 +9,8 @@ import { havanaTravels } from "@/lib/havana";
 import { cienfuegosTrinidadTravels } from "@/lib/havana";
 import HavanaCard from "@/components/HavanaCard.astro";
 import { CienfuegosTrinidadTabs } from "@/components/CienfuegosTrinidadTabs";
+import { getLangFromUrl } from "../../../i18n/utils";
+import { SITE_LOGO } from "../../../content/site";
 
 export async function getStaticPaths() {
   const travels = await getCollection("travels");
@@ -24,9 +26,25 @@ const { travel } = Astro.props;
 const { data, slug } = travel;
 const { title, description, images, feautures } = data;
 const { Content } = await render(travel);
+
+const image = SITE_LOGO;
+
+const routeLang = getLangFromUrl(Astro.url);
+const lang = routeLang ?? "en";
+
+// Construir URL canónica
+const url = Astro.url.pathname;
+const noIndex: boolean = false;
 ---
 
-<Layout title={title}>
+<Layout
+  title={title}
+  description={description[0]}
+  image={images[0]}
+  url={url}
+  lang={lang}
+  noIndex={noIndex}
+>
   <div class="mx-auto max-w-7xl px-5 py-12 sm:py-16 lg:px-8">
     <!-- Título -->
     <h1
@@ -34,7 +52,7 @@ const { Content } = await render(travel);
     >
       Excursion to {title === "Havana" ? "Colonial Havana" : title}
     </h1>
-    <Carousel images={images} />
+    <Carousel images={images} lang={lang}/>
     <!-- Descripción -->
 
     {

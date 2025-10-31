@@ -5,12 +5,11 @@ import Carousel from "../../../components/Carousel.astro";
 import Layout from "../../../layouts/Layout.astro";
 import Features from "../../../components/Features.astro";
 import HavanaCard from "@/components/HavanaCard.astro";
-import {
-  havanaTravelsRussian,
-  cienfuegosTrinidadRussianTravels,
-} from "@/lib/havana";
+import {havanaTravelsRussian, cienfuegosTrinidadRussianTravels} from "@/lib/havana";
 import { HavanaRussianTabs } from "@/components/HavanaRussianTabs";
 import { CienfuegosTrinidadRussianTabs } from "@/components/CienfuegosTrinidadRussianTabs";
+import { getLangFromUrl } from "../../../i18n/utils";
+import { SITE_LOGO } from "../../../content/site";
 
 export async function getStaticPaths() {
   const travels = await getCollection("rusian");
@@ -26,9 +25,26 @@ const { travel } = Astro.props;
 const { data, slug } = travel;
 const { title, description, images, feautures } = data;
 const { Content } = await render(travel);
+
+const image = SITE_LOGO;
+
+const routeLang = getLangFromUrl(Astro.url);
+const lang = routeLang ?? "en";
+
+// Construir URL canónica
+const url= Astro.url.pathname;
+const noIndex: boolean = false;
+
 ---
 
-<Layout title={title}>
+<Layout
+  title={title}
+  description={description[0]}
+  image={images[0]}
+  url={url}
+  lang={lang}
+  noIndex={noIndex}
+>
   <div class="mx-auto max-w-7xl px-5 py-12 sm:py-16 lg:px-8">
     <!-- Título -->
     <h1
@@ -40,7 +56,7 @@ const { Content } = await render(travel);
           : "Экскурсии"
       } в {title === "Гавана" ? "Гавану" : title}
     </h1>
-    <Carousel images={images} />
+    <Carousel images={images} lang={lang} />
     <!-- Descripción -->
     <p
       class="mb-8 text-justify text-sm md:text-lg dark:text-gray-300 leading-relaxed"

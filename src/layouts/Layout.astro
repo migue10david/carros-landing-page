@@ -1,33 +1,109 @@
 ---
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
-import { ClientRouter } from 'astro:transitions';
-
+import { getLangFromUrl } from '../i18n/utils';
+import { SITE_URL, SITE_NAME, SITE_LOGO } from '../content/site';
 
 interface Props {
-	title: string;
+	title?: string;
+	description?: string;
+	image?: string;
+	url?: string;
+	lang?: string;
+	noIndex?: boolean;
 }
 
-const { title } = Astro.props;
+const {
+	title = SITE_NAME,
+	description = 'Экскурсии и туры на Кубе | Excursiones y tours en Cuba — Cuba Easy Tours',
+	image = '/images/logo.jpg',
+	url,
+	lang: propLang,
+	noIndex = false,
+} = Astro.props as Props;
+
+const routeLang = getLangFromUrl(Astro.url);
+const lang = propLang ?? routeLang ?? 'en';
+
+// Construir URL canónica
+const pathname = Astro.url.pathname;
+const pageUrl = url
+	? url.startsWith('http')
+		? url
+		: SITE_URL + url
+	: SITE_URL + pathname;
+
+// Imagen absoluta para OG
+const ogImage = image && image.startsWith('/') ? SITE_URL + image : image;
+
+const fullTitle = title.includes('|') ? title : `${title} | ${SITE_NAME}`;
+const robots = noIndex ? 'noindex, nofollow' : 'index, follow';
+
+// Generar hreflang alternates (asumimos 'en' y 'ru' según astro.config.mjs)
+function altUrlFor(locale: string) {
+	// remover prefijo de idioma si existe
+	const cleanPath = pathname.replace(/^\/(en|ru)/, '');
+	const p = cleanPath === '' ? '/' : cleanPath;
+	return `${SITE_URL}/${locale}${p}`.replace(/([^:]\/\/)\//, '$1');
+}
+
+const jsonLd = JSON.stringify({
+	'@context': 'https://schema.org',
+	'@type': 'Organization',
+	name: SITE_NAME,
+	url: SITE_URL,
+	logo: SITE_URL + SITE_LOGO,
+});
 
 ---
 
-
 <!doctype html>
-<html lang="en">
+<html lang={lang}>
 	<head>
 		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width,initial-scale=1" />
+		<!-- Favicon principal -->
+		<link rel="icon" type="image/x-icon" href="favicon.ico" />
+		<!-- Para navegadores modernos -->
+		<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+		<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
+		<!-- Apple Touch Icon -->
+		<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+		<!-- Para Android/Chrome -->
+		<link rel="manifest" href="site.webmanifest" />		
 		<meta name="generator" content={Astro.generator} />
-		<title>{title}</title>
-		<script src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
-		<ClientRouter />
+
+		<title>{fullTitle}</title>
+		<meta name="description" content={description} />
+		<meta name="robots" content={robots} />
+
+		<link rel="canonical" href={pageUrl} />
+		<link rel="alternate" href={altUrlFor('en')} hreflang="en" />
+		<link rel="alternate" href={altUrlFor('ru')} hreflang="ru" />
+		<link rel="alternate" href={SITE_URL} hreflang="x-default" />
+
+		<!-- Open Graph -->
+		<meta property="og:type" content="website" />
+		<meta property="og:site_name" content={SITE_NAME} />
+		<meta property="og:title" content={fullTitle} />
+		<meta property="og:description" content={description} />
+		<meta property="og:url" content={pageUrl} />
+		<meta property="og:image" content={ogImage} />
+		<meta property="og:locale" content={lang} />
+
+		<!-- Twitter Card -->
+		<meta name="twitter:card" content="summary_large_image" />
+		<meta name="twitter:title" content={fullTitle} />
+		<meta name="twitter:description" content={description} />
+		<meta name="twitter:image" content={ogImage} />
+
+		<!-- JSON-LD Organization -->
+		<script type="application/ld+json">{jsonLd}</script>
 	</head>
 	<body>
-		<Header/>
+		<Header />
 		<slot />
-		<Footer/>
+		<Footer />
 	</body>
 </html>
 

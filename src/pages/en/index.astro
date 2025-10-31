@@ -1,11 +1,17 @@
 ---
 import Welcome from "../../components/Welcome.astro";
 import Layout from "../../layouts/Layout.astro";
+import { SITE_NAME, SITE_LOGO } from "../../content/site";
 
-
-
+const title = "Home";
+const description = "Home" + " - " + SITE_NAME;
+const image = SITE_LOGO;
 ---
 
-<Layout title='Cuba Easy Tours'>
-	<Welcome />
+<Layout
+  title={title}
+  description={description}
+  image={image}
+>
+  <Welcome />
 </Layout>
