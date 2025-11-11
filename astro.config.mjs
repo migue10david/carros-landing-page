@@ -6,7 +6,9 @@ import react from "@astrojs/react";
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'http://localhost:4321',
+  site: 'https://cubaeasytours.com',
+  trailingSlash: 'ignore', // o 'always' - ser consistente
+  output: 'static', // o 'server' si usas SSR  
   vite: {
     plugins: [tailwindcss()],
   },
