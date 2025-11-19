@@ -41,18 +41,17 @@ const robots = noIndex ? 'noindex, nofollow' : 'index, follow';
 
 // Generar hreflang alternates (asumimos 'en' y 'ru' según astro.config.mjs)
 function altUrlFor(locale: string) {
-	// remover prefijo de idioma si existe
-	const cleanPath = pathname.replace(/^\/(en|ru)/, '');
-	const p = cleanPath === '' ? '/' : cleanPath;
-	return `${SITE_URL}/${locale}${p}`.replace(/([^:]\/\/)\//, '$1');
+  const clean = pathname.replace(/^\/(en|ru)/, '') || '/';
+  return `${SITE_URL}/${locale}${clean}`.replace(/\/+$/, '/');
 }
+const ogLocale = lang === 'ru' ? 'ru_RU' : 'en_US';
 
 const jsonLd = JSON.stringify({
-	'@context': 'https://schema.org',
-	'@type': 'Organization',
-	name: SITE_NAME,
-	url: SITE_URL,
-	logo: SITE_URL + SITE_LOGO,
+  '@context': 'https://schema.org',
+  '@type': 'Organization',
+  name: SITE_NAME,
+  url: SITE_URL,
+  logo: SITE_URL + SITE_LOGO,
 });
 
 ---
@@ -78,9 +77,9 @@ const jsonLd = JSON.stringify({
 		<meta name="robots" content={robots} />
 
 		<link rel="canonical" href={pageUrl} />
-		<link rel="alternate" href={altUrlFor('en')} hreflang="en" />
-		<link rel="alternate" href={altUrlFor('ru')} hreflang="ru" />
-		<link rel="alternate" href={SITE_URL} hreflang="x-default" />
+  <link rel="alternate" hreflang="en" href={altUrlFor('en')} />
+  <link rel="alternate" hreflang="ru" href={altUrlFor('ru')} />
+  <link rel="alternate" hreflang="x-default" href={SITE_URL} />
 
 		<!-- Open Graph -->
 		<meta property="og:type" content="website" />
@@ -88,7 +87,7 @@ const jsonLd = JSON.stringify({
 		<meta property="og:title" content={fullTitle} />
 		<meta property="og:description" content={description} />
 		<meta property="og:url" content={pageUrl} />
-		<meta property="og:image" content={ogImage} />
+		<meta property="og:image" content={ogLocale} />
 		<meta property="og:locale" content={lang} />
 
 		<!-- Twitter Card -->

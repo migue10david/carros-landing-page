@@ -20,7 +20,7 @@ const basePath = currentPath.replace(/^\/(?:[a-z]{2})/, "") || "/";
           class="flex items-center gap-2 text-gray-700 dark:text-gray-200 bg-white dark:bg-gray-800"
         >
           {code === 'en' ? '🇺🇸 ' : '🇷🇺 '}
-          {name}
+          <label class="capitalize">{name}</label>
         </option>
       );
     })}

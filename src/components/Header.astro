@@ -3,6 +3,7 @@ import "../styles/global.css";
 import LanguagePicker from "./LanguagePicker.astro";
 
 import { getLangFromUrl, useTranslation } from "../i18n/utils";
+import { Image } from "astro:assets";
 
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslation(lang);
@@ -28,7 +29,8 @@ const t = useTranslation(lang);
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
             </svg>
           </div> -->
-          <img src="/images/logo.png" alt="logo" class="w-16 h-16 md:w-20 md:h-20" class="object-contain" />
+          <!-- <img src="/images/logo.png" alt="logo" class="w-16 h-16 md:w-20 md:h-20" class="object-contain" /> -->
+           <Image src={"/images/logo.png"} alt={"logo"} width={64} height={64} class="object-contain md:w-20 md:h-20" />
           <span class="text-xl font-bold bg-gradient-to-r from-blue-600 to-cyan-600 bg-clip-text text-transparent dark:from-blue-400 dark:to-cyan-400">
             Cuba Easy Tours
           </span>
