@@ -2,7 +2,7 @@
 title: Маtanzas
 description: ["Discover the beauty of Matanzas, city of rivers, bridges and poetry. History, nature and culture combine here, from mystical caves and river landscapes to viewpoints and streets full of colonial charm. Take the opportunity to get to know the “Athens of Cuba” and enjoy an unforgettable tour that will allow you to learn more about the Island of Liberty."]
 images:
-  - /images/matanzas/matanzas4.jpeg
+  - /images/matanzas/matanzas4.avif
   - /images/matanzas/matanzas11.jpeg
   - /images/matanzas/matanzas6.jpeg
   - /images/matanzas/matanzas9.jpeg

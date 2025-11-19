@@ -4,7 +4,7 @@ description: [
   "Havana, the capital of Cuba, is today one of the most dynamic and attractive tourist destinations in the Caribbean. Crossing the Bacunayagua Bridge — the highest in Cuba and one of the longest — offers breathtaking views of the beautiful Yumuri Valley, adding extra value to the long journey from Varadero. Exclusively touring Old Havana and Modern Havana, learning about their history, enjoying the stunning architecture of their streets and unique local character, is one of the greatest attractions. We offer panoramic tours through the most significant sites of Cuban history, culture, and contemporary life."
 ]
 images:
-  - /images/havana-tours/carro-tatico2.jpeg
+  - /images/havana-tours/carro-tatico2.avif
   - /images/havana-tours/Havana-capitolio.jpg
   - /images/havana-tours/floridita.jpg
   - /images/havana-tours/plaza2.jpg
