@@ -1,4 +1,5 @@
 ---
+// src/layouts/Layout.astro
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import { getLangFromUrl } from '../i18n/utils';
@@ -15,8 +16,10 @@ interface Props {
 }
 
 const {
-	title = SITE_NAME,
-	description = 'Экскурсии и туры на Кубе | Excursiones y tours en Cuba — Cuba Easy Tours',
+    // FIX: Título optimizado por defecto
+	title = 'Authentic Cuba Tours — Private & Small-Group Trips | Cuba Easy Tours', 
+    // FIX: Descripción optimizada con keywords y CTA
+	description = 'Explore Cuba with local guides: Havana, Trinidad & Varadero. Private tours, classic cars, personalized itineraries. Book direct — small groups.',
 	image = '/images/logo.jpg',
 	url,
 	lang: propLang,
@@ -26,35 +29,51 @@ const {
 const routeLang = getLangFromUrl(Astro.url);
 const lang = propLang ?? routeLang ?? 'en';
 
-// Construir URL canónica
+// --- LÓGICA DE CANONICAL (FIX CRÍTICO) ---
+// Usamos Astro.url.pathname para asegurar que SIEMPRE apunte a la página actual,
+// evitando que todo canonicalice a la home.
 const pathname = Astro.url.pathname;
-const pageUrl = url
-	? url.startsWith('http')
-		? url
-		: SITE_URL + url
-	: SITE_URL + pathname;
+const cleanPathname = pathname.endsWith('/') ? pathname : pathname + '/'; // Normalizar slash
+const canonicalUrl = new URL(cleanPathname, SITE_URL).href;
 
 // Imagen absoluta para OG
 const ogImage = image && image.startsWith('/') ? SITE_URL + image : image;
-
-const fullTitle = title.includes('|') ? title : `${title} | ${SITE_NAME}`;
+// Título completo: Evitamos duplicar el nombre del sitio si ya está en el título
+const fullTitle = title.includes('Cuba Easy Tours') ? title : `${title} | ${SITE_NAME}`;
 const robots = noIndex ? 'noindex, nofollow' : 'index, follow';
 
-// Generar hreflang alternates (asumimos 'en' y 'ru' según astro.config.mjs)
+// --- HREFLANG ---
+// Generar hreflang alternates dinámicamente para EN y RU
 function altUrlFor(locale: string) {
+  // Quitamos el idioma actual de la ruta para reemplazarlo
   const clean = pathname.replace(/^\/(en|ru)/, '') || '/';
-  return `${SITE_URL}/${locale}${clean}`.replace(/\/+$/, '/');
+  // Construimos la nueva URL asegurando que no haya doble slash
+  const newUrl = `${SITE_URL}/${locale}${clean}`.replace(/([^:]\/)\/+/g, "$1");
+  return newUrl.endsWith('/') ? newUrl : newUrl + '/';
 }
+
 const ogLocale = lang === 'ru' ? 'ru_RU' : 'en_US';
 
+// --- JSON-LD ENRIQUECIDO (TravelAgency) ---
 const jsonLd = JSON.stringify({
   '@context': 'https://schema.org',
-  '@type': 'Organization',
+  '@type': 'TravelAgency', // Cambiado de Organization a TravelAgency
   name: SITE_NAME,
   url: SITE_URL,
   logo: SITE_URL + SITE_LOGO,
+  description: description,
+  // Agrega aquí tus datos reales
+  address: {
+    "@type": "PostalAddress",
+    "addressLocality": "Havana",
+    "addressCountry": "CU"
+  },
+  // "telephone": "+53-XXX-XXXX", // Descomenta y agrega tu número
+  sameAs: [
+    "https://www.facebook.com/cubaeasytours",
+    "https://www.instagram.com/cubaeasytours"
+  ]
 });
-
 ---
 
 <!doctype html>
@@ -62,36 +81,36 @@ const jsonLd = JSON.stringify({
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width,initial-scale=1" />
-		<!-- Favicon principal -->
-		<link rel="icon" type="image/x-icon" href="favicon.ico" />
-		<!-- Para navegadores modernos -->
-		<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
-		<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
-		<!-- Apple Touch Icon -->
-		<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
-		<!-- Para Android/Chrome -->
-		<link rel="manifest" href="site.webmanifest" />		
+		
+		<link rel="icon" type="image/x-icon" href="/favicon.ico" />
+		<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+		<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+		<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+		<link rel="manifest" href="/site.webmanifest" />		
 		<meta name="generator" content={Astro.generator} />
 
 		<title>{fullTitle}</title>
 		<meta name="description" content={description} />
 		<meta name="robots" content={robots} />
 
-		<link rel="canonical" href={pageUrl} />
-  <link rel="alternate" hreflang="en" href={altUrlFor('en')} />
-  <link rel="alternate" hreflang="ru" href={altUrlFor('ru')} />
-  <link rel="alternate" hreflang="x-default" href={SITE_URL} />
+		<link rel="canonical" href={canonicalUrl} />
+		<!-- NOTE: Asegúrate de NO inyectar otro <link rel="canonical"> desde plugins/plantillas;
+		     este archivo ya genera canonical dinámico basado en la ruta actual. -->
+        <link rel="alternate" hreflang="en" href={altUrlFor('en')} />
+        <link rel="alternate" hreflang="ru" href={altUrlFor('ru')} />
+        <link rel="alternate" hreflang="x-default" href={altUrlFor('en')} />
 
-		<!-- Open Graph -->
 		<meta property="og:type" content="website" />
 		<meta property="og:site_name" content={SITE_NAME} />
 		<meta property="og:title" content={fullTitle} />
 		<meta property="og:description" content={description} />
-		<meta property="og:url" content={pageUrl} />
-		<meta property="og:image" content={ogLocale} />
-		<meta property="og:locale" content={lang} />
+		<meta property="og:url" content={canonicalUrl} />
+		<meta property="og:image" content={ogImage} />
+		<!-- Dimensiones recomendadas para social previews (mejora visual en shares) -->
+		<meta property="og:image:width" content="1200" />
+		<meta property="og:image:height" content="630" />
+		<meta property="og:locale" content={ogLocale} />
 
-		<!-- Twitter Card -->
 		<meta name="twitter:card" content="summary_large_image" />
 		<meta name="twitter:title" content={fullTitle} />
 		<meta name="twitter:description" content={description} />
@@ -99,8 +118,7 @@ const jsonLd = JSON.stringify({
 
 		<meta name="yandex-verification" content="73b17af092bc5763" />
 
-		<!-- JSON-LD Organization -->
-		<script type="application/ld+json">{jsonLd}</script>
+		<script type="application/ld+json" set:html={jsonLd} />
 	</head>
 	<body>
 		<Header />
@@ -109,4 +127,3 @@ const jsonLd = JSON.stringify({
 		<Footer />
 	</body>
 </html>
-

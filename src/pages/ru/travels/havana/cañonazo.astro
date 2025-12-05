@@ -7,8 +7,8 @@ import Features from "@/components/Features.astro";
 import { canyonPhotos } from "@/mockedPhotos/havanaPhotos";
 import { SITE_NAME, SITE_LOGO } from "@/content/site";
 
-const title = "Cañonazo";
-const description = "Cañonazo" + " - " + SITE_NAME;
+const title = "Церемония Каньонасо — Вечерняя экскурсия по Гаване | Cuba Easy Tours";
+const description = "Наблюдайте за вечерней церемонией «Каньонасо» в форте Ла Кабанья и исследуйте исторические достопримечательности Гаваны. Вечерние туры, частные гиды и гибкие маршруты. Бронируйте через WhatsApp.";
 const image = SITE_LOGO;
 
 const lang = getLangFromUrl(Astro.url);
@@ -44,9 +44,7 @@ const t = useTranslation(lang);
         {havanaTravelsRussian[2].title}
       </h1>
     </div>
-    <Carousel
-      images={havanaTravelsRussian[2].images}
-    />
+    <Carousel images={havanaTravelsRussian[2].images} lang={lang}/>
     <!-- Descripción -->
     <p
       class="text-justify text-sm md:text-lg dark:text-gray-300 leading-relaxed"

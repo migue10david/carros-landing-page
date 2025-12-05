@@ -7,8 +7,8 @@ import Features from "@/components/Features.astro";
 import { canyonPhotos, nichoPhotos } from "@/mockedPhotos/havanaPhotos";
 import { SITE_NAME, SITE_LOGO } from "@/content/site";
 
-const title = "Nicho";
-const description = "Nicho" + " - " + SITE_NAME;
+const title = "El Nicho Waterfalls Excursion — Nature & Trinidad | Cuba Easy Tours";
+const description = "Hike to El Nicho waterfalls, swim in natural pools and visit Trinidad's UNESCO historic center. Includes transport, entrance fees and local guide.";
 const image = SITE_LOGO;
 
 const lang = getLangFromUrl(Astro.url);
@@ -44,7 +44,7 @@ const t = useTranslation(lang);
         Excursions to {cienfuegosTrinidadTravels[1].title}
       </h1>
     </div>
-    <Carousel images={cienfuegosTrinidadTravels[1].images}/>
+    <Carousel images={cienfuegosTrinidadTravels[1].images} lang={lang}/>
     <!-- Descripción -->
     <p
       class=" text-justify text-sm md:text-lg dark:text-gray-300 leading-relaxed"

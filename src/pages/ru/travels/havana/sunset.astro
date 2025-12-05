@@ -7,8 +7,8 @@ import { sunsetPhotos } from "@/mockedPhotos/havanaPhotos";
 import Features from "@/components/Features.astro";
 import { SITE_NAME, SITE_LOGO } from "@/content/site";
 
-const title = "Sunset";
-const description = "Sunset" + " - " + SITE_NAME;
+const title = "Закат и виды на Малекон — Вечерний тур | Cuba Easy Tours";
+const description = "Насладитесь закатом над Малеконом в Гаване с панорамными точками обзора и опциями на классических автомобилях. Малые группы и персонализированные маршруты. Забронируйте место.";
 const image = SITE_LOGO;
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslation(lang);
@@ -37,7 +37,7 @@ const t = useTranslation(lang);
     {havanaTravelsRussian[1].title}
   </h1>
 </div>
-    <Carousel images={havanaTravelsRussian[1].images} />
+    <Carousel images={havanaTravelsRussian[1].images} lang={lang}/>
     <!-- Descripción -->
     <p
       class=" text-justify text-sm md:text-lg dark:text-gray-300 leading-relaxed"

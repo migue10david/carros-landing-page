@@ -7,8 +7,8 @@ import Features from "@/components/Features.astro";
 import { canyonPhotos, flamingosPhotos } from "@/mockedPhotos/havanaPhotos";
 import { SITE_NAME, SITE_LOGO } from "@/content/site";
 
-const title = "Flamingos";
-const description = "Flamingos" + " - " + SITE_NAME;
+const title = "Фламинго и лагуна Гуанарока — Однодневная экскурсия в Тринидад | Cuba Easy Tours";
+const description = "Увидьте розовых фламинго на лодочной прогулке по лагуне Гуанарока, исследуйте колониальные улицы Тринидада и залив Сьенфуэгос. Малые группы, частные опции и опытные местные гиды.";
 const image = SITE_LOGO;
 
 const lang = getLangFromUrl(Astro.url);
@@ -44,7 +44,7 @@ const t = useTranslation(lang);
         {cienfuegosTrinidadRussianTravels[0].title}
       </h1>
     </div>
-    <Carousel images={cienfuegosTrinidadRussianTravels[0].images} />
+    <Carousel images={cienfuegosTrinidadRussianTravels[0].images} lang={lang}/>
     <!-- Descripción -->
     <p
       class="text-justify text-sm md:text-lg dark:text-gray-300 leading-relaxed"
